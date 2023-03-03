@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
-  <file path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
-  <file path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
-  <file path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
-  <file path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
+  <file path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
+  <file path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
+  <file path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
+  <file path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java" totalNumberOfTokens=""/>
   <duplication lines="96" tokens="">
-    <file column="8" endcolumn="45" endline="114" line="96" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="8" endcolumn="45" endline="114" line="96" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
   </duplication>
   <duplication lines="90" tokens="">
-    <file column="8" endcolumn="45" endline="108" line="90" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+    <file column="8" endcolumn="45" endline="108" line="90" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
   <duplication lines="126" tokens="">
-    <file column="12" endcolumn="12" endline="142" line="126" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="12" endcolumn="12" endline="142" line="126" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
   </duplication>
   <duplication lines="119" tokens="">
-    <file column="12" endcolumn="12" endline="135" line="119" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+    <file column="12" endcolumn="12" endline="135" line="119" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
   <duplication lines="227" tokens="">
-    <file column="8" endcolumn="66" endline="236" line="227" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="8" endcolumn="66" endline="236" line="227" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
   </duplication>
   <duplication lines="216" tokens="">
-    <file column="8" endcolumn="66" endline="225" line="216" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+    <file column="8" endcolumn="66" endline="225" line="216" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
   <duplication lines="240" tokens="">
-    <file column="8" endcolumn="17" endline="253" line="240" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="8" endcolumn="17" endline="253" line="240" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
   </duplication>
   <duplication lines="229" tokens="">
-    <file column="8" endcolumn="17" endline="242" line="229" begintoken="" endtoken="" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+    <file column="8" endcolumn="17" endline="242" line="229" begintoken="" endtoken="" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
 </pmd-cpd>
