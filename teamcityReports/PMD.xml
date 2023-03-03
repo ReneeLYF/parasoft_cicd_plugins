@@ -1,68 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd-cpd>
-   <file path="/home/pmd/source/pmd-core/src/test/java/net/sourceforge/pmd/RuleReferenceTest.java" totalNumberOfTokens="523"/>
-   <file path="/home/pmd/source/pmd-core/src/test/java/net/sourceforge/pmd/lang/rule/xpath/JaxenXPathRuleQueryTest.java" totalNumberOfTokens="120"/>
-   <duplication lines="33" tokens="239">
-      <file column="29" endcolumn="75" endline="64" line="32" begintoken="2356" endtoken="2594"
-            path="/home/pmd/source/pmd-core/src/test/java/net/sourceforge/pmd/RuleReferenceTest.java"/>
-      <file column="37" endcolumn="75" endline="100" line="68" begintoken="5700" endtoken="5938"
-            path="/home/pmd/source/pmd-core/src/test/java/net/sourceforge/pmd/RuleReferenceTest.java"/>
-      <codefragment><![CDATA[    public void testOverride() {
-        final StringProperty PROPERTY1_DESCRIPTOR = new StringProperty("property1", "Test property", null, 0f);
-        MockRule rule = new MockRule();
-        rule.definePropertyDescriptor(PROPERTY1_DESCRIPTOR);
-        rule.setLanguage(LanguageRegistry.getLanguage(Dummy2LanguageModule.NAME));
-        rule.setName("name1");
-        rule.setProperty(PROPERTY1_DESCRIPTOR, "value1");
-        rule.setMessage("message1");
-        rule.setDescription("description1");
-        rule.addExample("example1");
-        rule.setExternalInfoUrl("externalInfoUrl1");
-        rule.setPriority(RulePriority.HIGH);
-
-        final StringProperty PROPERTY2_DESCRIPTOR = new StringProperty("property2", "Test property", null, 0f);
-        RuleReference ruleReference = new RuleReference();
-        ruleReference.setRule(rule);
-        ruleReference.definePropertyDescriptor(PROPERTY2_DESCRIPTOR);
-        ruleReference.setLanguage(LanguageRegistry.getLanguage(DummyLanguageModule.NAME));
-        ruleReference
-                .setMinimumLanguageVersion(LanguageRegistry.getLanguage(DummyLanguageModule.NAME).getVersion("1.3"));
-        ruleReference
-                .setMaximumLanguageVersion(LanguageRegistry.getLanguage(DummyLanguageModule.NAME).getVersion("1.7"));
-        ruleReference.setDeprecated(true);
-        ruleReference.setName("name2");
-        ruleReference.setProperty(PROPERTY1_DESCRIPTOR, "value2");
-        ruleReference.setProperty(PROPERTY2_DESCRIPTOR, "value3");
-        ruleReference.setMessage("message2");
-        ruleReference.setDescription("description2");
-        ruleReference.addExample("example2");
-        ruleReference.setExternalInfoUrl("externalInfoUrl2");
-        ruleReference.setPriority(RulePriority.MEDIUM_HIGH);
-
-        validateOverriddenValues(PROPERTY1_DESCRIPTOR, PROPERTY2_DESCRIPTOR, ruleReference);]]></codefragment>
-   </duplication>
-   <duplication lines="16" tokens="110">
-      <file column="9" endcolumn="28" endline="81" line="66" begintoken="3000" endtoken="3109"
-            path="/home/pmd/source/pmd-core/src/test/java/net/sourceforge/pmd/lang/rule/xpath/JaxenXPathRuleQueryTest.java"/>
-      <file column="9" endcolumn="28" endline="103" line="88" begintoken="3200" endtoken="3309"
-            path="/home/pmd/source/pmd-core/src/test/java/net/sourceforge/pmd/lang/rule/xpath/JaxenXPathRuleQueryTest.java"/>
-      <file column="9" endcolumn="28" endline="125" line="110" begintoken="3400" endtoken="3509"
-            path="/home/pmd/source/pmd-core/src/test/java/net/sourceforge/pmd/lang/rule/xpath/JaxenXPathRuleQueryTest.java"/>
-      <codefragment><![CDATA[        JaxenXPathRuleQuery query = createQuery(xpath);
-        List<String> ruleChainVisits = query.getRuleChainVisits();
-        Assert.assertEquals(2, ruleChainVisits.size());
-        Assert.assertTrue(ruleChainVisits.contains("dummyNode"));
-        // Note: Having AST_ROOT in the rule chain visits is probably a mistake. But it doesn't hurt, it shouldn't
-        // match a real node name.
-        Assert.assertTrue(ruleChainVisits.contains(JaxenXPathRuleQuery.AST_ROOT));
-
-        DummyNodeWithListAndEnum dummy = new DummyNodeWithListAndEnum(1);
-        RuleContext data = new RuleContext();
-        data.setLanguageVersion(LanguageRegistry.findLanguageByTerseName("dummy").getDefaultVersion());
-
-        query.evaluate(dummy, data);
-        // note: the actual xpath queries are only available after evaluating
-        Assert.assertEquals(2, query.nodeNameToXPaths.size());
-        Assert.assertEquals("self::node()[(attribute::Test1 = \"false\")][(attribute::Test2 = \"true\")]", query.nodeNameToXPaths.get("dummyNode").get(0).toString());]]></codefragment>
-   </duplication>
-</pmd-cpd>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" version="1.0" timestamp="2023">
+    <file name="/ATM/ATM/ATM.cxx">
+        <violation beginline="4" endline="4" begincolumn="5" endcolumn="6" rule="INIT-06" ruleset="INIT" priority="1"/>
+    </file>
+    <file name="/ATM/ATM/ATM.cxx">
+        <violation beginline="10" endline="10" begincolumn="48" endcolumn="49" rule="OPT-14" ruleset="OPT" priority="3"/>
+    </file>
+    <file name="/ATM/ATM/Bank.cxx">
+        <violation beginline="15" endline="15" begincolumn="42" endcolumn="43" rule="OPT-14" ruleset="OPT" priority="3"/>
+    </file>
+    <file name="/ATM/ATM/include/Account.hxx">
+        <violation beginline="16" endline="16" begincolumn="8" endcolumn="9" rule="CODSTA-CPP-04" ruleset="CODSTA-CPP" priority="1"/>
+    </file>
+    <file name="/ATM/ATM/include/Bank.hxx">
+        <violation beginline="16" endline="16" begincolumn="44" endcolumn="45" rule="OPT-14" ruleset="OPT" priority="3"/>
+    </file>
+    <file name="/ATM/ATM/include/BaseDisplay.hxx">
+        <violation beginline="4" endline="4" begincolumn="6" endcolumn="7" rule="OOP-23" ruleset="OOP" priority="2"/>
+    </file>
+</pmd>
