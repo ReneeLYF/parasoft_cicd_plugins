@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+  <file path="/FlowAnalysisCpp/MemoryLeak.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <file path="/FlowAnalysisCpp/DeadLock.cpp" totalNumberOfTokens=""/>
+  <duplication lines="7" tokens="">
+    <file column="14" endcolumn="18" endline="7" line="7" begintoken="" endtoken="" path="/FlowAnalysisCpp/MemoryLeak.cpp"/>
+  </duplication>
+  <duplication lines="10" tokens="">
+    <file column="19" endcolumn="23" endline="10" line="10" begintoken="" endtoken="" path="/FlowAnalysisCpp/MemoryLeak.cpp"/>
+  </duplication>
+  <duplication lines="73" tokens="">
+    <file column="0" endcolumn="1" endline="76" line="73" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="79" tokens="">
+    <file column="0" endcolumn="1" endline="82" line="79" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="75" tokens="">
+    <file column="1" endcolumn="30" endline="75" line="75" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="81" tokens="">
+    <file column="1" endcolumn="30" endline="81" line="81" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="91" tokens="">
+    <file column="3" endcolumn="17" endline="91" line="91" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="122" tokens="">
+    <file column="3" endcolumn="17" endline="122" line="122" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="9" tokens="">
+    <file column="1" endcolumn="16" endline="9" line="9" begintoken="" endtoken="" path="/FlowAnalysisCpp/MemoryLeak.cpp"/>
+  </duplication>
+  <duplication lines="92" tokens="">
+    <file column="4" endcolumn="38" endline="92" line="92" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="118" tokens="">
+    <file column="3" endcolumn="37" endline="118" line="118" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="100" tokens="">
+    <file column="3" endcolumn="15" endline="100" line="100" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="128" tokens="">
+    <file column="3" endcolumn="15" endline="128" line="128" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="102" tokens="">
+    <file column="2" endcolumn="11" endline="102" line="102" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="130" tokens="">
+    <file column="2" endcolumn="11" endline="130" line="130" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="13" tokens="">
+    <file column="1" endcolumn="10" endline="13" line="13" begintoken="" endtoken="" path="/FlowAnalysisCpp/NullPointer.cpp"/>
+  </duplication>
+  <duplication lines="135" tokens="">
+    <file column="0" endcolumn="1" endline="142" line="135" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="145" tokens="">
+    <file column="0" endcolumn="1" endline="152" line="145" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="136" tokens="">
+    <file column="1" endcolumn="47" endline="141" line="136" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+  <duplication lines="146" tokens="">
+    <file column="1" endcolumn="47" endline="151" line="146" begintoken="" endtoken="" path="/FlowAnalysisCpp/DeadLock.cpp"/>
+  </duplication>
+</pmd-cpd>

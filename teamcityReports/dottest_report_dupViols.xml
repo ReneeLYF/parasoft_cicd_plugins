@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/CurrencyExchangeConverter.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithCents.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithNoCents.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs" totalNumberOfTokens=""/>
+  <file path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs" totalNumberOfTokens=""/>
+  <duplication lines="21" tokens="">
+    <file column="16" endcolumn="26" endline="21" line="21" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
+  </duplication>
+  <duplication lines="77" tokens="">
+    <file column="16" endcolumn="26" endline="77" line="77" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
+  </duplication>
+  <duplication lines="28" tokens="">
+    <file column="46" endcolumn="70" endline="28" line="28" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
+  </duplication>
+  <duplication lines="84" tokens="">
+    <file column="46" endcolumn="70" endline="84" line="84" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
+  </duplication>
+  <duplication lines="58" tokens="">
+    <file column="12" endcolumn="13" endline="60" line="58" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
+  </duplication>
+  <duplication lines="64" tokens="">
+    <file column="16" endcolumn="17" endline="66" line="64" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
+  </duplication>
+  <duplication lines="29" tokens="">
+    <file column="12" endcolumn="13" endline="31" line="29" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankUser.cs"/>
+  </duplication>
+  <duplication lines="68" tokens="">
+    <file column="12" endcolumn="24" endline="68" line="68" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
+  </duplication>
+  <duplication lines="32" tokens="">
+    <file column="12" endcolumn="25" endline="32" line="32" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankUser.cs"/>
+  </duplication>
+  <duplication lines="20" tokens="">
+    <file column="12" endcolumn="24" endline="20" line="20" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
+  </duplication>
+  <duplication lines="18" tokens="">
+    <file column="12" endcolumn="24" endline="18" line="18" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
+  </duplication>
+  <duplication lines="38" tokens="">
+    <file column="8" endcolumn="9" endline="47" line="38" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="50" tokens="">
+    <file column="8" endcolumn="9" endline="59" line="50" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="39" tokens="">
+    <file column="12" endcolumn="62" endline="46" line="39" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="51" tokens="">
+    <file column="12" endcolumn="62" endline="58" line="51" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="75" tokens="">
+    <file column="12" endcolumn="60" endline="75" line="75" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="142" tokens="">
+    <file column="12" endcolumn="60" endline="142" line="142" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="76" tokens="">
+    <file column="12" endcolumn="26" endline="76" line="76" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="94" tokens="">
+    <file column="12" endcolumn="26" endline="94" line="94" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="79" tokens="">
+    <file column="53" endcolumn="58" endline="79" line="79" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="118" tokens="">
+    <file column="84" endcolumn="89" endline="118" line="118" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="130" tokens="">
+    <file column="82" endcolumn="87" endline="130" line="130" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="140" tokens="">
+    <file column="55" endcolumn="60" endline="140" line="140" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="19" tokens="">
+    <file column="46" endcolumn="51" endline="19" line="19" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="33" tokens="">
+    <file column="107" endcolumn="112" endline="33" line="33" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="41" tokens="">
+    <file column="75" endcolumn="80" endline="41" line="41" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="25" tokens="">
+    <file column="21" endcolumn="26" endline="25" line="25" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="42" tokens="">
+    <file column="21" endcolumn="26" endline="42" line="42" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="80" tokens="">
+    <file column="16" endcolumn="17" endline="82" line="80" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="102" tokens="">
+    <file column="20" endcolumn="21" endline="104" line="102" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="84" tokens="">
+    <file column="16" endcolumn="17" endline="86" line="84" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="12" tokens="">
+    <file column="12" endcolumn="13" endline="14" line="12" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
+  </duplication>
+  <duplication lines="34" tokens="">
+    <file column="26" endcolumn="29" endline="34" line="34" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/TransactionBase.cs"/>
+  </duplication>
+  <duplication lines="87" tokens="">
+    <file column="16" endcolumn="29" endline="87" line="87" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="89" tokens="">
+    <file column="12" endcolumn="25" endline="89" line="89" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="116" tokens="">
+    <file column="16" endcolumn="37" endline="119" line="116" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="128" tokens="">
+    <file column="16" endcolumn="37" endline="131" line="128" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="123" tokens="">
+    <file column="16" endcolumn="33" endline="123" line="123" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="133" tokens="">
+    <file column="16" endcolumn="33" endline="133" line="133" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
+  </duplication>
+  <duplication lines="27" tokens="">
+    <file column="47" endcolumn="72" endline="27" line="27" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs"/>
+  </duplication>
+  <duplication lines="15" tokens="">
+    <file column="47" endcolumn="72" endline="15" line="15" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
+  </duplication>
+  <duplication lines="31" tokens="">
+    <file column="42" endcolumn="61" endline="31" line="31" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs"/>
+  </duplication>
+  <duplication lines="50" tokens="">
+    <file column="42" endcolumn="61" endline="50" line="50" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ReportGenerator.cs"/>
+  </duplication>
+  <duplication lines="39" tokens="">
+    <file column="8" endcolumn="9" endline="39" line="39" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs"/>
+  </duplication>
+  <duplication lines="12" tokens="">
+    <file column="8" endcolumn="9" endline="12" line="12" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="46" tokens="">
+    <file column="8" endcolumn="9" endline="46" line="46" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ReportGenerator.cs"/>
+  </duplication>
+  <duplication lines="12" tokens="">
+    <file column="8" endcolumn="9" endline="12" line="12" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
+  </duplication>
+  <duplication lines="13" tokens="">
+    <file column="8" endcolumn="9" endline="13" line="13" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
+  </duplication>
+  <duplication lines="25" tokens="">
+    <file column="12" endcolumn="13" endline="27" line="25" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/CurrencyExchangeConverter.cs"/>
+  </duplication>
+  <duplication lines="38" tokens="">
+    <file column="12" endcolumn="13" endline="40" line="38" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/CurrencyExchangeConverter.cs"/>
+  </duplication>
+  <duplication lines="56" tokens="">
+    <file column="12" endcolumn="13" endline="58" line="56" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/CurrencyExchangeConverter.cs"/>
+  </duplication>
+  <duplication lines="19" tokens="">
+    <file column="12" endcolumn="69" endline="20" line="19" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="22" tokens="">
+    <file column="12" endcolumn="71" endline="23" line="22" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="19" tokens="">
+    <file column="58" endcolumn="66" endline="19" line="19" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="20" tokens="">
+    <file column="58" endcolumn="66" endline="20" line="20" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="21" tokens="">
+    <file column="58" endcolumn="66" endline="21" line="21" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="20" tokens="">
+    <file column="46" endcolumn="51" endline="20" line="20" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="34" tokens="">
+    <file column="106" endcolumn="111" endline="34" line="34" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="38" tokens="">
+    <file column="108" endcolumn="113" endline="38" line="38" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="43" tokens="">
+    <file column="52" endcolumn="57" endline="43" line="43" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="27" tokens="">
+    <file column="21" endcolumn="26" endline="27" line="27" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="44" tokens="">
+    <file column="21" endcolumn="26" endline="44" line="44" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="21" tokens="">
+    <file column="46" endcolumn="51" endline="21" line="21" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="35" tokens="">
+    <file column="107" endcolumn="112" endline="35" line="35" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="39" tokens="">
+    <file column="107" endcolumn="112" endline="39" line="39" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="44" tokens="">
+    <file column="52" endcolumn="57" endline="44" line="44" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="26" tokens="">
+    <file column="21" endcolumn="26" endline="26" line="26" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="43" tokens="">
+    <file column="21" endcolumn="26" endline="43" line="43" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="22" tokens="">
+    <file column="46" endcolumn="51" endline="22" line="22" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="46" tokens="">
+    <file column="52" endcolumn="57" endline="46" line="46" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="28" tokens="">
+    <file column="21" endcolumn="26" endline="28" line="28" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="45" tokens="">
+    <file column="21" endcolumn="26" endline="45" line="45" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="22" tokens="">
+    <file column="59" endcolumn="68" endline="22" line="22" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="23" tokens="">
+    <file column="59" endcolumn="68" endline="23" line="23" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="23" tokens="">
+    <file column="46" endcolumn="51" endline="23" line="23" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="36" tokens="">
+    <file column="105" endcolumn="110" endline="36" line="36" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="45" tokens="">
+    <file column="52" endcolumn="57" endline="45" line="45" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="30" tokens="">
+    <file column="21" endcolumn="26" endline="30" line="30" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="47" tokens="">
+    <file column="21" endcolumn="26" endline="47" line="47" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="25" tokens="">
+    <file column="59" endcolumn="67" endline="25" line="25" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="25" tokens="">
+    <file column="69" endcolumn="77" endline="25" line="25" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="26" tokens="">
+    <file column="61" endcolumn="69" endline="26" line="26" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="26" tokens="">
+    <file column="71" endcolumn="79" endline="26" line="26" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="27" tokens="">
+    <file column="61" endcolumn="70" endline="27" line="27" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="27" tokens="">
+    <file column="72" endcolumn="81" endline="27" line="27" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="33" tokens="">
+    <file column="12" endcolumn="159" endline="34" line="33" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="35" tokens="">
+    <file column="12" endcolumn="158" endline="36" line="35" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="43" tokens="">
+    <file column="12" endcolumn="68" endline="44" line="43" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="45" tokens="">
+    <file column="12" endcolumn="68" endline="46" line="45" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="54" tokens="">
+    <file column="59" endcolumn="65" endline="54" line="54" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="58" tokens="">
+    <file column="50" endcolumn="56" endline="58" line="58" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="62" tokens="">
+    <file column="12" endcolumn="77" endline="64" line="62" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="66" tokens="">
+    <file column="12" endcolumn="77" endline="68" line="66" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="70" tokens="">
+    <file column="12" endcolumn="77" endline="72" line="70" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="74" tokens="">
+    <file column="12" endcolumn="77" endline="76" line="74" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
+  </duplication>
+  <duplication lines="29" tokens="">
+    <file column="12" endcolumn="13" endline="31" line="29" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
+  </duplication>
+  <duplication lines="41" tokens="">
+    <file column="12" endcolumn="13" endline="43" line="41" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
+  </duplication>
+  <duplication lines="30" tokens="">
+    <file column="48" endcolumn="81" endline="30" line="30" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
+  </duplication>
+  <duplication lines="42" tokens="">
+    <file column="48" endcolumn="81" endline="42" line="42" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
+  </duplication>
+  <duplication lines="35" tokens="">
+    <file column="12" endcolumn="24" endline="35" line="35" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="50" tokens="">
+    <file column="12" endcolumn="24" endline="50" line="50" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
+  </duplication>
+  <duplication lines="37" tokens="">
+    <file column="12" endcolumn="24" endline="37" line="37" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
+  </duplication>
+  <duplication lines="34" tokens="">
+    <file column="12" endcolumn="24" endline="34" line="34" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
+  </duplication>
+  <duplication lines="51" tokens="">
+    <file column="12" endcolumn="63" endline="51" line="51" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithCents.cs"/>
+  </duplication>
+  <duplication lines="57" tokens="">
+    <file column="12" endcolumn="62" endline="57" line="57" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithCents.cs"/>
+  </duplication>
+  <duplication lines="32" tokens="">
+    <file column="12" endcolumn="67" endline="32" line="32" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithNoCents.cs"/>
+  </duplication>
+  <duplication lines="38" tokens="">
+    <file column="12" endcolumn="66" endline="38" line="38" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithNoCents.cs"/>
+  </duplication>
+  <duplication lines="18" tokens="">
+    <file column="8" endcolumn="9" endline="21" line="18" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
+  </duplication>
+  <duplication lines="17" tokens="">
+    <file column="8" endcolumn="9" endline="19" line="17" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
+  </duplication>
+  <duplication lines="24" tokens="">
+    <file column="8" endcolumn="9" endline="26" line="24" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
+  </duplication>
+  <duplication lines="22" tokens="">
+    <file column="8" endcolumn="9" endline="24" line="22" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
+  </duplication>
+  <duplication lines="23" tokens="">
+    <file column="8" endcolumn="9" endline="25" line="23" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
+  </duplication>
+  <duplication lines="25" tokens="">
+    <file column="12" endcolumn="39" endline="25" line="25" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
+  </duplication>
+  <duplication lines="23" tokens="">
+    <file column="12" endcolumn="40" endline="23" line="23" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
+  </duplication>
+  <duplication lines="24" tokens="">
+    <file column="12" endcolumn="39" endline="24" line="24" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
+  </duplication>
+  <duplication lines="36" tokens="">
+    <file column="8" endcolumn="9" endline="38" line="36" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
+  </duplication>
+  <duplication lines="33" tokens="">
+    <file column="8" endcolumn="9" endline="35" line="33" begintoken="" endtoken="" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
+  </duplication>
+</pmd-cpd>
