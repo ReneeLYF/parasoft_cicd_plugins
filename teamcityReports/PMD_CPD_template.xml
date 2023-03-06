@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+	<duplication lines="计算(srcRngEndLn - srcRngStartln)">
+		<file column="srcRngStartPos" endcolumn="srcRngEndPos" srcRngEndLn="10" srcRngStartln="4"
+            path="处理(srcRngFile)"/>
+	</duplication>
+</pmd-cpd>
