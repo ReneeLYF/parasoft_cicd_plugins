@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
+  <file path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+  <file path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
   <duplication lines="18">
     <file column="8" endcolumn="45" endline="114" line="96" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
     <file column="8" endcolumn="45" endline="108" line="90" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
