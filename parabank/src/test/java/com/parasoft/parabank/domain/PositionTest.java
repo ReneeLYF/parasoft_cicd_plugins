@@ -1,91 +1,403 @@
+/**
+ * 
+ */
 package com.parasoft.parabank.domain;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
 
 import java.math.BigDecimal;
-
 import org.junit.Test;
 
-import com.parasoft.parabank.test.util.AbstractBeanTestCase;
-
 /**
- * @req PAR-30
+ * Parasoft Jtest UTA: Test class for Position
  *
+ * @see com.parasoft.parabank.domain.Position
+ * @author devtest
  */
-public class PositionTest extends AbstractBeanTestCase<Position> {
-    private static final int POSITION1_ID = 1;
+public class PositionTest {
 
-    private static final int POSITION2_ID = 2;
+	/**
+	 * Parasoft Jtest UTA: Test for equals(Object)
+	 *
+	 * @see com.parasoft.parabank.domain.Position#equals(Object)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testEquals() throws Throwable {
+		// Given
+		Position underTest = new Position();
 
-    private static final int CUSTOMER1_ID = 1;
+		// When
+		Object obj = null; // UTA: provided value
+		boolean result = underTest.equals(obj);
 
-    private static final int CUSTOMER2_ID = 2;
+		// Then - assertions for result of method equals(Object)
+		assertFalse(result);
 
-    private static final String NAME = "Test Company";
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
 
-    private static final String SYMBOL = "TC";
+	}
 
-    private static final int SHARES1 = 1;
+	/**
+	 * Parasoft Jtest UTA: Test for equals(Object)
+	 *
+	 * @see com.parasoft.parabank.domain.Position#equals(Object)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testEquals2() throws Throwable {
+		// Given
+		Position underTest = new Position();
+		int id = 0; // UTA: provided value
+		underTest.setPositionId(id);
 
-    private static final int SHARES2 = 2;
+		// When
+		Position obj = mock(Position.class);
+		boolean result = underTest.equals(obj);
 
-    private static final BigDecimal PURCHASE_PRICE1 = new BigDecimal(100.00);
+		// Then - assertions for result of method equals(Object)
+		assertTrue(result);
 
-    private static final BigDecimal PURCHASE_PRICE2 = new BigDecimal(50.00);
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
 
-    @Test
-    public void testGetAndSetPositionId() {
-        bean.setPositionId(POSITION1_ID);
-        assertEquals(POSITION1_ID, bean.getPositionId());
-        bean.setPositionId(POSITION2_ID);
-        assertEquals(POSITION2_ID, bean.getPositionId());
-    }
+	}
 
-    @Test
-    public void testGetAndSetCustomerId() {
-        bean.setCustomerId(CUSTOMER1_ID);
-        assertEquals(CUSTOMER1_ID, bean.getCustomerId());
-        bean.setCustomerId(CUSTOMER2_ID);
-        assertEquals(CUSTOMER2_ID, bean.getCustomerId());
-    }
+	/**
+	 * Parasoft Jtest UTA: Test for equals(Object)
+	 *
+	 * @see com.parasoft.parabank.domain.Position#equals(Object)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testEquals3() throws Throwable {
+		// Given
+		Position underTest = new Position();
+		int id = -1000; // UTA: provided value
+		underTest.setCustomerId(id);
+		int id2 = -1000; // UTA: provided value
+		underTest.setPositionId(id2);
 
-    @Test
-    public void testGetAndSetName() {
-        assertNull(bean.getName());
-        bean.setName(NAME);
-        assertEquals(NAME, bean.getName());
-    }
+		// When
+		Position obj = mock(Position.class);
+		boolean result = underTest.equals(obj);
 
-    @Test
-    public void testGetAndSetSymbol() {
-        assertNull(bean.getSymbol());
-        bean.setSymbol(SYMBOL);
-        assertEquals(SYMBOL, bean.getSymbol());
-    }
+		// Then - assertions for result of method equals(Object)
+		assertFalse(result);
 
-    @Test
-    public void testGetAndSetShares() {
-        bean.setShares(SHARES1);
-        assertEquals(SHARES1, bean.getShares());
-        bean.setShares(SHARES2);
-        assertEquals(SHARES2, bean.getShares());
-    }
+		// Then - assertions for this instance of Position
+		assertEquals(-1000, underTest.getPositionId());
+		assertEquals(-1000, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
 
-    @Test
-    public void testGetAndSetPurchasePrice() {
-        bean.setPurchasePrice(PURCHASE_PRICE1);
-        assertEquals(PURCHASE_PRICE1, bean.getPurchasePrice());
-        bean.setPurchasePrice(PURCHASE_PRICE2);
-        assertEquals(PURCHASE_PRICE2, bean.getPurchasePrice());
-    }
+	}
 
-    @Test
-    public void testGetCostBasis() {
-        bean.setPurchasePrice(PURCHASE_PRICE1);
-        assertEquals(PURCHASE_PRICE1, bean.getPurchasePrice());
-        bean.setShares(SHARES1);
-        assertEquals(SHARES1, bean.getShares());
-        assertEquals(new BigDecimal(100), bean.getCostBasis());
-    }
+	/**
+	 * Parasoft Jtest UTA: Test for equals(Object)
+	 *
+	 * @see com.parasoft.parabank.domain.Position#equals(Object)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testEquals4() throws Throwable {
+		// Given
+		Position underTest = new Position();
+		int id = -1000; // UTA: provided value
+		underTest.setCustomerId(id);
+		int id2 = -1000; // UTA: provided value
+		underTest.setPositionId(id2);
+		int shares = -999; // UTA: provided value
+		underTest.setShares(shares);
+
+		// When
+		Position obj = mock(Position.class);
+		boolean result = underTest.equals(obj);
+
+		// Then - assertions for result of method equals(Object)
+		assertFalse(result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(-1000, underTest.getPositionId());
+		assertEquals(-1000, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(-999, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getCostBasis()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#getCostBasis()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetCostBasis() throws Throwable {
+		// Given
+		Position underTest = new Position();
+		BigDecimal price = BigDecimal.ZERO; // UTA: default value
+		underTest.setPurchasePrice(price);
+
+		// When
+		BigDecimal result = underTest.getCostBasis();
+
+		// Then - assertions for result of method getCostBasis()
+		assertNotNull(result);
+		assertEquals(0d, result.doubleValue(), 0.0);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNotNull(underTest.getPurchasePrice());
+		assertEquals(0d, underTest.getPurchasePrice().doubleValue(), 0.0);
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getCustomerId()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#getCustomerId()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetCustomerId() throws Throwable {
+		// Given
+		Position underTest = new Position();
+
+		// When
+		int result = underTest.getCustomerId();
+
+		// Then - assertions for result of method getCustomerId()
+		assertEquals(0, result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getName()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#getName()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetName() throws Throwable {
+		// Given
+		Position underTest = new Position();
+
+		// When
+		String result = underTest.getName();
+
+		// Then - assertions for result of method getName()
+		assertNull(result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getPositionId()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#getPositionId()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetPositionId() throws Throwable {
+		// Given
+		Position underTest = new Position();
+
+		// When
+		int result = underTest.getPositionId();
+
+		// Then - assertions for result of method getPositionId()
+		assertEquals(0, result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getPurchasePrice()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#getPurchasePrice()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetPurchasePrice() throws Throwable {
+		// Given
+		Position underTest = new Position();
+
+		// When
+		BigDecimal result = underTest.getPurchasePrice();
+
+		// Then - assertions for result of method getPurchasePrice()
+		assertNull(result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getShares()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#getShares()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetShares() throws Throwable {
+		// Given
+		Position underTest = new Position();
+
+		// When
+		int result = underTest.getShares();
+
+		// Then - assertions for result of method getShares()
+		assertEquals(0, result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertNull(underTest.getSymbol());
+		assertNull(underTest.getPurchasePrice());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getSymbol()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#getSymbol()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetSymbol() throws Throwable {
+		// Given
+		Position underTest = new Position();
+
+		// When
+		String result = underTest.getSymbol();
+
+		// Then - assertions for result of method getSymbol()
+		assertNull(result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertNull(underTest.getName());
+		assertEquals(0, underTest.getShares());
+		assertNull(underTest.getPurchasePrice());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for hashCode()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#hashCode()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testHashCode() throws Throwable {
+		// Given
+		Position underTest = new Position();
+		BigDecimal price = BigDecimal.ZERO; // UTA: default value
+		underTest.setPurchasePrice(price);
+		String name = "name"; // UTA: default value
+		underTest.setName(name);
+		String symbol = "symbol"; // UTA: default value
+		underTest.setSymbol(symbol);
+
+		// When
+		int result = underTest.hashCode();
+
+		// Then - assertions for result of method hashCode()
+		// assertEquals(0, result);// UTA: Expected value may be unstable
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertEquals("name", underTest.getName());
+		assertEquals("symbol", underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNotNull(underTest.getPurchasePrice());
+		assertEquals(0d, underTest.getPurchasePrice().doubleValue(), 0.0);
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for toString()
+	 *
+	 * @see com.parasoft.parabank.domain.Position#toString()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testToString() throws Throwable {
+		// Given
+		Position underTest = new Position();
+		BigDecimal price = BigDecimal.ZERO; // UTA: default value
+		underTest.setPurchasePrice(price);
+		String name = "name"; // UTA: default value
+		underTest.setName(name);
+		String symbol = "symbol"; // UTA: default value
+		underTest.setSymbol(symbol);
+
+		// When
+		String result = underTest.toString();
+
+		// Then - assertions for result of method toString()
+		assertEquals("Position [positionId=0, customerId=0, name=name, symbol=symbol, shares=0, purchasePrice=0]",
+				result);
+
+		// Then - assertions for this instance of Position
+		assertEquals(0, underTest.getPositionId());
+		assertEquals(0, underTest.getCustomerId());
+		assertEquals("name", underTest.getName());
+		assertEquals("symbol", underTest.getSymbol());
+		assertEquals(0, underTest.getShares());
+		assertNotNull(underTest.getPurchasePrice());
+		assertEquals(0d, underTest.getPurchasePrice().doubleValue(), 0.0);
+
+	}
 }

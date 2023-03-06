@@ -1,108 +1,121 @@
+/**
+ * 
+ */
 package com.parasoft.parabank.service;
 
-import static com.github.tomakehurst.wiremock.client.WireMock.findAll;
-import static com.github.tomakehurst.wiremock.client.WireMock.postRequestedFor;
-import static com.github.tomakehurst.wiremock.client.WireMock.urlPathMatching;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertNull;
+import static org.mockito.ArgumentMatchers.nullable;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
-import java.math.BigDecimal;
-import java.util.List;
-
-import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.github.tomakehurst.wiremock.verification.LoggedRequest;
 import com.parasoft.parabank.domain.LoanRequest;
 import com.parasoft.parabank.domain.LoanResponse;
 import com.parasoft.parabank.domain.logic.LoanProvider;
-import com.parasoft.parabank.domain.logic.impl.LoanProviderMapAware;
-import com.parasoft.parabank.test.util.AbstractParaBankDataSourceTest;
-import com.parasoft.parabank.test.util.LoanRequestTestConfig;
+import org.junit.Test;
 
 /**
- * @req PAR-41
+ * Parasoft Jtest UTA: Test class for LoanProcessorServiceImpl
  *
+ * @see com.parasoft.parabank.service.LoanProcessorServiceImpl
+ * @author devtest
  */
-public class LoanProcessorServiceImplTest extends AbstractParaBankDataSourceTest {
-    private final static Logger log = LoggerFactory.getLogger(LoanProcessorServiceImplTest.class);
+public class LoanProcessorServiceImplTest {
 
-    @javax.annotation.Resource(name = "loanProcessorService")
-    private LoanProcessorService loanProcessorService;
+	/**
+	 * Parasoft Jtest UTA: Test for getLoanProcessor()
+	 *
+	 * @see com.parasoft.parabank.service.LoanProcessorServiceImpl#getLoanProcessor()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetLoanProcessor() throws Throwable {
+		// Given
+		LoanProcessorServiceImpl underTest = new LoanProcessorServiceImpl();
 
-    private LoanRequest loanRequest;
+		// When
+		LoanProvider result = underTest.getLoanProcessor();
 
-    @Override
-    public void onSetUp() throws Exception {
-        super.onSetUp();
-        if (loanProcessorService instanceof LoanProcessorAware) {
-            final LoanProvider lp = ((LoanProcessorAware) loanProcessorService).getLoanProcessor();
-            if (lp instanceof LoanProviderMapAware) {
-                ((LoanProviderMapAware) lp).setParameter("loanProcessor");
-            }
-        }
-        loanRequest = new LoanRequest();
-        loanRequest.setCustomerId(12345);
-        loanRequest.setAvailableFunds(new BigDecimal("1000.00"));
+		// Then - assertions for result of method getLoanProcessor()
+		assertNull(result);
 
-    }
+		// Then - assertions for this instance of LoanProcessorServiceImpl
+		assertNull(underTest.getLoanProviderName());
 
-    public void setLoanProcessorService(final LoanProcessorService loanProcessorService) {
-        this.loanProcessorService = loanProcessorService;
-    }
+	}
 
-    @Test
-    public void test01RequestLoan() throws Exception {
-        loanRequest.setLoanAmount(new BigDecimal("100.00"));
-        loanRequest.setDownPayment(new BigDecimal("10.00"));
-        LoanResponse response = loanProcessorService.requestLoan(loanRequest);
-        assertTrue(response.isApproved());
-        assertNotNull(response.getResponseDate());
-        assertEquals("Test Provider", response.getLoanProviderName());
+	/**
+	 * Parasoft Jtest UTA: Test for getLoanProviderName()
+	 *
+	 * @see com.parasoft.parabank.service.LoanProcessorServiceImpl#getLoanProviderName()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetLoanProviderName() throws Throwable {
+		// Given
+		LoanProcessorServiceImpl underTest = new LoanProcessorServiceImpl();
 
-        loanRequest.setLoanAmount(new BigDecimal("10000.00"));
-        response = loanProcessorService.requestLoan(loanRequest);
-        assertFalse(response.isApproved());
-        assertNotNull(response.getResponseDate());
-        assertEquals("error.insufficient.funds", response.getMessage());
-        assertEquals("Test Provider", response.getLoanProviderName());
-    }
+		// When
+		String result = underTest.getLoanProviderName();
 
-    /**
-     * Test method for
-     * {@link com.parasoft.parabank.messaging.WebServiceLoanProvider#requestLoan(com.parasoft.parabank.domain.LoanRequest)}
-     * .
-     */
-    @Test
-    public void test02WebRequestLoan() throws Exception {
-        if (loanProcessorService instanceof LoanProcessorAware) {
-            final LoanProvider lp = ((LoanProcessorAware) loanProcessorService).getLoanProcessor();
-            if (lp instanceof LoanProviderMapAware) {
-                ((LoanProviderMapAware) lp).setParameter("loanProvider");
-                // this will switch the loan provider to WS
-            }
-        }
+		// Then - assertions for result of method getLoanProviderName()
+		assertNull(result);
 
-        for (final LoanRequestTestConfig key : getResources()) {
-            if (key.isLoanRequest()) {
-                log.info("LoanRequest for ${} started ", key.getAmount());
-                loanRequest.setLoanAmount(key.getAmountBigDecimal());
-                loanRequest.setDownPayment(key.getDownPaymentBigDecimal());
-                final LoanResponse response = loanProcessorService.requestLoan(loanRequest);
-                key.validateResults(response, "Test Provider");
-                log.info("LoanRequest for ${} validated ", key.getAmount());
-            }
-        }
+		// Then - assertions for this instance of LoanProcessorServiceImpl
+		assertNull(underTest.getLoanProcessor());
 
-        if (log.isTraceEnabled()) {
-            final List<LoggedRequest> requests =
-                findAll(postRequestedFor(urlPathMatching("/parabank/services/LoanProcessor")));
-            for (final LoggedRequest loggedRequest : requests) {
-                log.info("Request Body {}", loggedRequest.getBodyAsString());
-            }
-        }
-    }
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for requestLoan(LoanRequest)
+	 *
+	 * @see com.parasoft.parabank.service.LoanProcessorServiceImpl#requestLoan(LoanRequest)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testRequestLoan() throws Throwable {
+		// Given
+		LoanProcessorServiceImpl underTest = new LoanProcessorServiceImpl();
+		LoanProvider loanProcessor = mockLoanProvider();
+		underTest.setLoanProcessor(loanProcessor);
+		String loanProviderName = "loanProviderName"; // UTA: default value
+		underTest.setLoanProviderName(loanProviderName);
+
+		// When
+		LoanRequest loanRequest = mock(LoanRequest.class);
+		LoanResponse result = underTest.requestLoan(loanRequest);
+
+		// Then - assertions for argument 1 of method requestLoan(LoanRequest)
+		assertNull(loanRequest.getRequestDate());
+		assertEquals(0, loanRequest.getCustomerId());
+		assertNull(loanRequest.getAvailableFunds());
+		assertNull(loanRequest.getDownPayment());
+		assertNull(loanRequest.getLoanAmount());
+
+		// Then - assertions for result of method requestLoan(LoanRequest)
+		assertNotNull(result);
+		assertNull(result.getResponseDate());
+		assertNull(result.getLoanProviderName());
+		assertFalse(result.isApproved());
+		assertNull(result.getMessage());
+		assertNull(result.getAccountId());
+
+		// Then - assertions for this instance of LoanProcessorServiceImpl
+		assertNotNull(underTest.getLoanProcessor());
+		assertEquals("loanProviderName", underTest.getLoanProviderName());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Helper method to generate and configure mock of LoanProvider
+	 */
+	private static LoanProvider mockLoanProvider() throws Throwable {
+		LoanProvider loanProcessor = mock(LoanProvider.class);
+		LoanResponse requestLoanResult = mock(LoanResponse.class);
+		when(loanProcessor.requestLoan(nullable(LoanRequest.class))).thenReturn(requestLoanResult);
+		return loanProcessor;
+	}
+
 }

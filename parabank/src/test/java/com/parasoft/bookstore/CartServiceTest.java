@@ -1,166 +1,211 @@
+/**
+ * 
+ */
 package com.parasoft.bookstore;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.mock;
 
 import org.junit.Test;
 
 /**
- * <DL>
- * <DT>Description:</DT>
- * <DD>TODO add description</DD>
- * <DT>Date:</DT>
- * <DD>Oct 6, 2015</DD>
- * </DL>
+ * Parasoft Jtest UTA: Test class for CartService
  *
- * @author nrapo - Nick Rapoport
- * @req PAR-39
+ * @see com.parasoft.bookstore.CartService
+ * @author devtest
  */
+public class CartServiceTest {
 
-public class CartServiceTest extends AbstractCartService {
-    private static org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(CartServiceTest.class);
+	/**
+	 * Parasoft Jtest UTA: Test for addItemToCart(Integer, int, int)
+	 *
+	 * @see com.parasoft.bookstore.CartService#addItemToCart(Integer, int, int)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000, expected = Exception.class)
+	public void testAddItemToCart() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#addItemToCart(java.lang.Integer, int, int)}
-     * .
-     *
-     * @req PAR-1
-     */
-    @Test
-    public void testAddItemToCart() {
-        DisplayOrder no = null;
-        int cartId = getCurrentCartId();
-        // add cart with negative quantity
-        try {
-            no = getService().addItemToCart(0, 0, -1);
-        } catch (Exception e) {
-            assertEquals(e.getMessage(), "Cannot have an order with negative quantity.");
-        }
-        assertNull(no);
-        try {
-            // add order to cart with id 0
-            no = getService().addItemToCart(0, 1, 1);
-            int newCartId = no.getCartId();
-            getCurrentCartId(); // just logging the the new cart
-            assertEquals(cartId + 1, newCartId);
-            Book book = no.getItem().getBook();
-            assertEquals(book.getId(), 1);
-            assertEquals(book.getStockQuantity(), 20);
-            assertEquals(book.getPublisher(), "Prentice Hall");
-            // add order to existing cart (making it two items)
-            no = getService().addItemToCart(newCartId, 1, 1);
-            assertEquals(no.getCartId(), newCartId);
-            Order order = no.getItem();
-            assertEquals(order.getQuantity(), 2);
-            // add order to non-existent cart
-            no = getService().addItemToCart(1000, 1, 1);
-        } catch (Exception e) {
-            if (!e.getMessage().equals("An order with Cart Id 1000 does not exist!")) {
-                log.error("got unexpected exception ", e);
-            }
-            assertEquals("An order with Cart Id 1000 does not exist!", e.getMessage());
-        } finally {
-            getCurrentCartId();
-        }
-    }
+		// When
+		Integer cartId = 0; // UTA: default value
+		int itemId = 0; // UTA: default value
+		int quantity = -1; // UTA: provided value
+		underTest.addItemToCart(cartId, itemId, quantity);
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#updateItemInCart(int, int, int)}
-     * .
-     * @req PAR-1
-     */
-    @Test
-    public void testUpdateItemInCart() {
-        DisplayOrder no = null;
-        int cartId = getCurrentCartId();
-        // update order with negative quantity
-        int newCartId = 0;
-        try {
-            no = getService().addItemToCart(0, 1, 1);
-            newCartId = no.getCartId();
-            assertEquals(newCartId, cartId + 1);
-            getCurrentCartId();
-            no = null;
-            no = getService().updateItemInCart(newCartId, 1, -1);
-        } catch (Exception e) {
-            assertEquals("Cannot update an order with negative quantity.", e.getMessage());
-        }
-        assertNull(no);
-        // update order with higher quantity than what's in stock
-        try {
-            // add order to existing cart
-            no = getService().addItemToCart(newCartId, 1, 1);
-            assertEquals(newCartId, no.getCartId());
-            Order order = no.getItem();
-            assertEquals(order.getQuantity(), 2);
-            no = null;
-            no = getService().updateItemInCart(newCartId, 1, 1000);
-        } catch (Exception e) {
-            assertEquals("Did not update order with cartId " + newCartId + ","
-                + " 1000 is greater than the quantity in stock: 20", e.getMessage());
-        }
-        assertNull(no);
-        getCurrentCartId();
-    }
+	}
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#getItemByTitle(java.lang.String)}
-     * .
-     * @req PAR-1
-     */
-    @Test
-    public void testGetItemByTitle() {
-        log.info("Not yet implemented");
-    }
+	/**
+	 * Parasoft Jtest UTA: Test for addNewItemToInventory(Book)
+	 *
+	 * @see com.parasoft.bookstore.CartService#addNewItemToInventory(Book)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testAddNewItemToInventory() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#getItemById(int)}.
-     */
-    @Test
-    public void testGetItemById() {
-        log.info("Not yet implemented");
-    }
+		// When
+		Book book = mock(Book.class);
+		Book result = underTest.addNewItemToInventory(book);
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#addNewItemToInventory(com.parasoft.bookstore.Book)}
-     * .
-     */
-    @Test
-    public void testAddNewItemToInventory() {
-        log.info("Not yet implemented");
-    }
+		// Then - assertions for argument 1 of method addNewItemToInventory(Book)
+		assertEquals(0, book.getId());
+		assertNull(book.getName());
+		assertEquals(0, book.getStockQuantity());
+		assertNull(book.getPrice());
+		assertNull(book.getISBN());
+		assertNull(book.getPublicationDate());
+		assertNull(book.getDescription());
+		assertNull(book.getAuthors());
+		assertNull(book.getPublisher());
+		assertEquals(0L, book.getTimestamp());
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#submitOrder(int)}.
-     * @req PAR-1
-     */
-    @Test
-    public void testSubmitOrder() {
-        log.info("Not yet implemented");
-    }
+		// Then - assertions for result of method addNewItemToInventory(Book)
+		assertNotNull(result);
+		assertEquals(0, result.getId());
+		assertNull(result.getName());
+		assertEquals(0, result.getStockQuantity());
+		assertNull(result.getPrice());
+		assertNull(result.getISBN());
+		assertNull(result.getPublicationDate());
+		assertNull(result.getDescription());
+		assertNull(result.getAuthors());
+		assertNull(result.getPublisher());
+		assertEquals(0L, result.getTimestamp());
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#getItemsInCart(int)}.
-     */
-    @Test
-    public void testGetItemsInCart() {
-        log.info("Not yet implemented");
-    }
+	}
 
-    /**
-     * Test method for
-     * {@link com.parasoft.bookstore.CartService#removeExpiredOrdersAndBooks()}.
-     */
-    @Test
-    public void testRemoveExpiredOrdersAndBooks() {
-        log.info("Not yet implemented");
-    }
+	/**
+	 * Parasoft Jtest UTA: Test for getItemByTitle(String)
+	 *
+	 * @see com.parasoft.bookstore.CartService#getItemByTitle(String)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetItemByTitle() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
 
+		// When
+		String title = "title"; // UTA: default value
+		Book[] result = underTest.getItemByTitle(title);
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getItemsInCart(int)
+	 *
+	 * @see com.parasoft.bookstore.CartService#getItemsInCart(int)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetItemsInCart() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
+
+		// When
+		int cartId = 0; // UTA: default value
+		CartManager result = underTest.getItemsInCart(cartId);
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for getStaticCart_Id()
+	 *
+	 * @see com.parasoft.bookstore.CartService#getStaticCart_Id()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testGetStaticCart_Id() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
+
+		// When
+		int result = underTest.getStaticCart_Id();
+
+		// Then - assertions for result of method getStaticCart_Id()
+		assertEquals(0, result);
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for removeExpiredOrdersAndBooks()
+	 *
+	 * @see com.parasoft.bookstore.CartService#removeExpiredOrdersAndBooks()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testRemoveExpiredOrdersAndBooks() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
+
+		// When
+		underTest.removeExpiredOrdersAndBooks();
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for submitOrder(int)
+	 *
+	 * @see com.parasoft.bookstore.CartService#submitOrder(int)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testSubmitOrder() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
+
+		// When
+		int cartId = 0; // UTA: default value
+		SubmittedOrder result = underTest.submitOrder(cartId);
+
+		// Then - assertions for result of method submitOrder(int)
+		assertNotNull(result);
+		assertFalse(result.getSuccess());
+		assertNotNull(result.getOrderTime());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for updateItemInCart(int, int, int)
+	 *
+	 * @see com.parasoft.bookstore.CartService#updateItemInCart(int, int, int)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testUpdateItemInCart() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
+
+		// When
+		int cartId = 0; // UTA: default value
+		int itemId = 0; // UTA: default value
+		int quantity = 0; // UTA: provided value
+		DisplayOrder result = underTest.updateItemInCart(cartId, itemId, quantity);
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for updateItemInCart(int, int, int)
+	 *
+	 * @see com.parasoft.bookstore.CartService#updateItemInCart(int, int, int)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000, expected = Exception.class)
+	public void testUpdateItemInCart2() throws Throwable {
+		// Given
+		CartService underTest = new CartService();
+
+		// When
+		int cartId = 0; // UTA: default value
+		int itemId = 0; // UTA: default value
+		int quantity = -1; // UTA: provided value
+		underTest.updateItemInCart(cartId, itemId, quantity);
+
+	}
 }

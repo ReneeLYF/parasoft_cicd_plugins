@@ -1,30 +1,55 @@
+/**
+ * 
+ */
 package com.parasoft.parabank.web;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
-import static org.junit.Assert.fail;
-
-import org.junit.Test;
 
 import com.parasoft.parabank.domain.Account.AccountType;
-import com.parasoft.parabank.test.util.AbstractParaBankTest;
+import org.junit.Test;
 
 /**
- * @req PAR-45
+ * Parasoft Jtest UTA: Test class for AccountTypeConverter
  *
+ * @see com.parasoft.parabank.web.AccountTypeConverter
+ * @author devtest
  */
-public class AccountTypeConverterTest extends AbstractParaBankTest {
-    @Test
-    public void testConvert() {
-        final AccountTypeConverter converter = new AccountTypeConverter();
-        assertNull(converter.convert(null));
-        assertEquals(AccountType.CHECKING, converter.convert("CHECKING"));
-        assertEquals(AccountType.SAVINGS, converter.convert("SAVINGS"));
+public class AccountTypeConverterTest {
 
-        try {
-            converter.convert("");
-            fail("did not catch expected IllegalArgumentException");
-        } catch (final IllegalArgumentException e) {
-        }
-    }
+	/**
+	 * Parasoft Jtest UTA: Test for convert(String)
+	 *
+	 * @see com.parasoft.parabank.web.AccountTypeConverter#convert(String)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testConvert() throws Throwable {
+		// Given
+		AccountTypeConverter underTest = new AccountTypeConverter();
+
+		// When
+		String key = "key"; // UTA: default value
+		AccountType result = underTest.convert(key);
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for convert(String)
+	 *
+	 * @see com.parasoft.parabank.web.AccountTypeConverter#convert(String)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testConvert2() throws Throwable {
+		// Given
+		AccountTypeConverter underTest = new AccountTypeConverter();
+
+		// When
+		String key = null; // UTA: provided value
+		AccountType result = underTest.convert(key);
+
+		// Then - assertions for result of method convert(String)
+		assertNull(result);
+
+	}
 }

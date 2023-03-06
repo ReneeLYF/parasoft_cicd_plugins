@@ -1,15 +1,18 @@
 package com.parasoft.parabank.domain;
 
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import com.google.gson.JsonObject;
 import com.parasoft.parabank.util.Constants;
 import com.parasoft.parabank.util.DateTimeAdapter;
 import com.parasoft.parabank.util.Util;
@@ -22,6 +25,20 @@ import com.parasoft.parabank.util.Util;
 public class Transaction {
     public enum TransactionType {
         Credit, Debit;
+    }
+
+    public static Transaction readFrom(final JsonObject json) throws ParseException {
+
+        final Transaction ret = new Transaction();
+        ret.setAccountId(json.get("accountId").getAsInt());
+        ret.setAmount(json.get("amount").getAsBigDecimal());
+        ret.setDescription(json.get("description").getAsString());
+        ret.setId(json.get("id").getAsInt());
+        final String dt = json.get("date").getAsString();
+        final Date date = DateTimeAdapter.dateFromString(dt);
+        ret.setDate(date);
+        ret.setType(TransactionType.valueOf(json.get("type").getAsString()));
+        return ret;
     }
 
     private int id;
@@ -72,12 +89,12 @@ public class Transaction {
         return id;
     }
 
-    @XmlTransient
     @JsonIgnore
     public int getIntType() {
         return type.ordinal();
     }
 
+    @JsonGetter(value = "type")
     public TransactionType getType() {
         return type;
     }
@@ -116,10 +133,11 @@ public class Transaction {
     }
 
     @JsonIgnore
-    public void setIntType(final int type) {
+    public void setType(final int type) {
         this.type = TransactionType.values()[type];
     }
 
+    @JsonSetter(value = "type")
     public void setType(final TransactionType type) {
         this.type = type;
     }

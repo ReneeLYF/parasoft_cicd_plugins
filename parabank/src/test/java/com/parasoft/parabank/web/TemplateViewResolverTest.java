@@ -1,43 +1,78 @@
+/**
+ * 
+ */
 package com.parasoft.parabank.web;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
 
 import java.util.Locale;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
 import org.junit.Test;
 import org.springframework.web.servlet.View;
-import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.view.AbstractView;
-
-import com.parasoft.parabank.test.util.AbstractParaBankTest;
 
 /**
- * @req PAR-6
+ * Parasoft Jtest UTA: Test class for TemplateViewResolver
  *
+ * @see com.parasoft.parabank.web.TemplateViewResolver
+ * @author devtest
  */
-public class TemplateViewResolverTest extends AbstractParaBankTest {
-    @Resource(name = "viewResolver")
-    private ViewResolver viewResolver;
+public class TemplateViewResolverTest {
 
-    public void setViewResolver(final ViewResolver viewResolver) {
-        this.viewResolver = viewResolver;
-    }
+	/**
+	 * Parasoft Jtest UTA: Test for isCache()
+	 *
+	 * @see com.parasoft.parabank.web.TemplateViewResolver#isCache()
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testIsCache() throws Throwable {
+		// Given
+		TemplateViewResolver underTest = new TemplateViewResolver();
 
-    /**
-     * @req PAR-10
-     * @throws Exception
-     */
-    @Test
-    public void testResolveViewName() throws Exception {
-        final View view = viewResolver.resolveViewName("test", Locale.getDefault());
-        assertTrue(view instanceof AbstractView);
-        final AbstractView abstractView = (AbstractView) view;
-        assertEquals(TemplateViewResolver.TEMPLATE_VIEW_NAME, abstractView.getBeanName());
-        final Map<String, Object> attributes = abstractView.getAttributesMap();
-        assertEquals("test", attributes.get(TemplateViewResolver.VIEW_ATTRIBUTE));
-    }
+		// When
+		boolean result = underTest.isCache();
+
+		// Then - assertions for result of method isCache()
+		assertFalse(result);
+
+		// Then - assertions for this instance of TemplateViewResolver
+		assertEquals(1024, underTest.getCacheLimit());
+		assertNotNull(underTest.getCacheFilter());
+		assertNull(underTest.getRedirectHosts());
+		assertNotNull(underTest.getAttributesMap());
+		assertEquals(0, underTest.getAttributesMap().size());
+		assertEquals(2147483647, underTest.getOrder());
+
+	}
+
+	/**
+	 * Parasoft Jtest UTA: Test for resolveViewName(String, Locale)
+	 *
+	 * @see com.parasoft.parabank.web.TemplateViewResolver#resolveViewName(String, Locale)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testResolveViewName() throws Throwable {
+		// Given
+		TemplateViewResolver underTest = new TemplateViewResolver();
+
+		// When
+		String viewName = "viewName"; // UTA: default value
+		Locale locale = mock(Locale.class);
+		View result = underTest.resolveViewName(viewName, locale);
+
+		// Then - assertions for this instance of TemplateViewResolver
+		assertEquals(1024, underTest.getCacheLimit());
+		assertTrue(underTest.isCacheUnresolved());
+		assertNotNull(underTest.getCacheFilter());
+		assertNull(underTest.getRedirectHosts());
+		assertNotNull(underTest.getAttributesMap());
+		assertEquals(1, underTest.getAttributesMap().size());
+		assertEquals(2147483647, underTest.getOrder());
+
+	}
 }

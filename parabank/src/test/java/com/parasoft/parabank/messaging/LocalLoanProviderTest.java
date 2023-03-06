@@ -1,54 +1,73 @@
+/**
+ * 
+ */
 package com.parasoft.parabank.messaging;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
-import java.math.BigDecimal;
-
-import javax.annotation.Resource;
-
-import org.junit.Test;
+import static org.junit.Assert.assertNull;
+import static org.mockito.ArgumentMatchers.nullable;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import com.parasoft.parabank.domain.LoanRequest;
 import com.parasoft.parabank.domain.LoanResponse;
-import com.parasoft.parabank.domain.logic.impl.ConfigurableLoanProvider;
-import com.parasoft.parabank.test.util.AbstractParaBankDataSourceTest;
+import com.parasoft.parabank.domain.logic.LoanProvider;
+import org.junit.Test;
 
 /**
- * @req PAR-39
+ * Parasoft Jtest UTA: Test class for LocalLoanProvider
  *
+ * @see com.parasoft.parabank.messaging.LocalLoanProvider
+ * @author devtest
  */
-public class LocalLoanProviderTest extends AbstractParaBankDataSourceTest {
-    private static final String TEST_PROVIDER = "Test Provider";
+public class LocalLoanProviderTest {
 
-    private LocalLoanProvider localLoanProvider;
+	/**
+	 * Parasoft Jtest UTA: Test for requestLoan(LoanRequest)
+	 *
+	 * @see com.parasoft.parabank.messaging.LocalLoanProvider#requestLoan(LoanRequest)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testRequestLoan() throws Throwable {
+		// Given
+		LocalLoanProvider underTest = new LocalLoanProvider();
+		LoanProvider loanProcessor = mockLoanProvider();
+		underTest.setLoanProcessor(loanProcessor);
+		String loanProviderName = "loanProviderName"; // UTA: default value
+		underTest.setLoanProviderName(loanProviderName);
 
-    @Resource(name = "loanProvider")
-    private ConfigurableLoanProvider loanProvider;
+		// When
+		LoanRequest loanRequest = mock(LoanRequest.class);
+		LoanResponse result = underTest.requestLoan(loanRequest);
 
-    @Override
-    public void onSetUp() throws Exception {
-        super.onSetUp();
-        localLoanProvider = new LocalLoanProvider();
-        localLoanProvider.setLoanProcessor(loanProvider);
-        localLoanProvider.setLoanProviderName(TEST_PROVIDER);
-    }
+		// Then - assertions for argument 1 of method requestLoan(LoanRequest)
+		assertNull(loanRequest.getRequestDate());
+		assertEquals(0, loanRequest.getCustomerId());
+		assertNull(loanRequest.getAvailableFunds());
+		assertNull(loanRequest.getDownPayment());
+		assertNull(loanRequest.getLoanAmount());
 
-    public void setLoanProvider(final ConfigurableLoanProvider loanProvider) {
-        this.loanProvider = loanProvider;
-    }
+		// Then - assertions for result of method requestLoan(LoanRequest)
+		assertNotNull(result);
+		assertNull(result.getResponseDate());
+		assertNull(result.getLoanProviderName());
+		assertFalse(result.isApproved());
+		assertNull(result.getMessage());
+		assertNull(result.getAccountId());
 
-    @Test
-    public void testRequestLoan() {
-        final LoanRequest loanRequest = new LoanRequest();
-        loanRequest.setAvailableFunds(new BigDecimal("1000.00"));
-        loanRequest.setDownPayment(new BigDecimal("100.00"));
-        loanRequest.setLoanAmount(new BigDecimal("5000.00"));
+	}
 
-        final LoanResponse response = localLoanProvider.requestLoan(loanRequest);
-        assertTrue(response.isApproved());
-        assertNotNull(response.getResponseDate());
-        assertEquals(TEST_PROVIDER, response.getLoanProviderName());
-    }
+	/**
+	 * Parasoft Jtest UTA: Helper method to generate and configure mock of LoanProvider
+	 */
+	private static LoanProvider mockLoanProvider() throws Throwable {
+		LoanProvider loanProcessor = mock(LoanProvider.class);
+		LoanResponse requestLoanResult = mock(LoanResponse.class);
+		when(loanProcessor.requestLoan(nullable(LoanRequest.class))).thenReturn(requestLoanResult);
+		return loanProcessor;
+	}
+
 }

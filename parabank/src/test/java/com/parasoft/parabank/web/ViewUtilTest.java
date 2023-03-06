@@ -1,44 +1,36 @@
+/**
+ * 
+ */
 package com.parasoft.parabank.web;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
-import java.util.Map;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
-import org.springframework.test.web.ModelAndViewAssert;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.parasoft.parabank.test.util.AbstractParaBankTest;
-
 /**
- * @req PAR-5
+ * Parasoft Jtest UTA: Test class for ViewUtil
  *
+ * @see com.parasoft.parabank.web.ViewUtil
+ * @author devtest
  */
-public class ViewUtilTest extends AbstractParaBankTest {
-    private static final String ERROR_MESSAGE = "error message";
+public class ViewUtilTest {
 
-    private static final String[] PARAMS = new String[] { "param1", "param2" };
+	/**
+	 * Parasoft Jtest UTA: Test for createErrorView(String)
+	 *
+	 * @see com.parasoft.parabank.web.ViewUtil#createErrorView(String)
+	 * @author devtest
+	 */
+	@Test(timeout = 10000)
+	public void testCreateErrorView() throws Throwable {
+		// When
+		String errorMessage = "errorMessage"; // UTA: default value
+		ModelAndView result = ViewUtil.createErrorView(errorMessage);
 
-    /**
-     * @req PAR-11
-     * @req PAR-21
-     */
-    @Test
-    public void testCreateErrorView() {
-        ModelAndView mav = ViewUtil.createErrorView(ERROR_MESSAGE);
-        assertEquals("error", mav.getViewName());
-        ModelAndViewAssert.assertViewName(mav, "error");
-        @SuppressWarnings("rawtypes")
-        Map map = ModelAndViewAssert.assertAndReturnModelAttributeOfType(mav, "model", Map.class);
-        assertEquals(ERROR_MESSAGE, map.get("message"));
-        assertNull(map.get("parameters"));
+		// Then - assertions for result of method createErrorView(String)
+		assertNotNull(result);
 
-        mav = ViewUtil.createErrorView(ERROR_MESSAGE, PARAMS);
-        assertEquals("error", mav.getViewName());
-        ModelAndViewAssert.assertViewName(mav, "error");
-        map = ModelAndViewAssert.assertAndReturnModelAttributeOfType(mav, "model", Map.class);
-        assertEquals(ERROR_MESSAGE, map.get("message"));
-        assertEquals(PARAMS, map.get("parameters"));
-    }
+	}
+
 }

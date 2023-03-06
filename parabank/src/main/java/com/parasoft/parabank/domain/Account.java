@@ -3,10 +3,12 @@ package com.parasoft.parabank.domain;
 import java.math.BigDecimal;
 
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import com.google.gson.JsonObject;
 import com.parasoft.parabank.util.Util;
 
 /**
@@ -28,6 +30,15 @@ public class Account {
         public boolean isInternal() {
             return internal;
         }
+    }
+
+    public static Account readFrom(final JsonObject json) {
+        final Account ret = new Account();
+        ret.setBalance(json.get("balance").getAsBigDecimal());
+        ret.setCustomerId(json.get("customerId").getAsInt());
+        ret.setId(json.get("id").getAsInt());
+        ret.setType(AccountType.valueOf(json.get("type").getAsString()));
+        return ret;
     }
 
     private int id;
@@ -59,7 +70,6 @@ public class Account {
             && Util.equals(balance, other.balance);
     }
 
-    @XmlTransient
     @JsonIgnore
     public BigDecimal getAvailableBalance() {
         return balance.signum() < 0 ? new BigDecimal(0) : balance;
@@ -77,7 +87,6 @@ public class Account {
         return id;
     }
 
-    @XmlTransient
     @JsonIgnore
     public int getIntType() {
         if (type == null) {
@@ -86,6 +95,7 @@ public class Account {
         return type.ordinal();
     }
 
+    @JsonGetter(value = "type")
     public AccountType getType() {
         return type;
     }
@@ -114,12 +124,13 @@ public class Account {
     }
 
     @JsonIgnore
-    public void setIntType(final int type) {
-        this.type = AccountType.values()[type];
-    }
-
     public void setType(final AccountType type) {
         this.type = type;
+    }
+
+    @JsonSetter(value = "type")
+    public void setType(final int type) {
+        this.type = AccountType.values()[type];
     }
 
     @Override
