@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="16" endcolumn="26" endline="21" line="21" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
     <file column="16" endcolumn="26" endline="77" line="77" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="46" endcolumn="70" endline="28" line="28" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
     <file column="46" endcolumn="70" endline="84" line="84" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="12" endcolumn="13" endline="60" line="58" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
     <file column="16" endcolumn="17" endline="66" line="64" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
     <file column="12" endcolumn="13" endline="31" line="29" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankUser.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="12" endcolumn="24" endline="68" line="68" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/AccountNumber.cs"/>
     <file column="12" endcolumn="25" endline="32" line="32" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankUser.cs"/>
     <file column="12" endcolumn="24" endline="20" line="20" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
     <file column="12" endcolumn="24" endline="18" line="18" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
   </duplication>
-  <duplication lines="9">
+  <duplication lines="10">
     <file column="8" endcolumn="9" endline="47" line="38" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="8" endcolumn="9" endline="59" line="50" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="7">
+  <duplication lines="8">
     <file column="12" endcolumn="62" endline="46" line="39" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="12" endcolumn="62" endline="58" line="51" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="12" endcolumn="60" endline="75" line="75" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="12" endcolumn="60" endline="142" line="142" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="12" endcolumn="26" endline="76" line="76" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="12" endcolumn="26" endline="94" line="94" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="53" endcolumn="58" endline="79" line="79" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="84" endcolumn="89" endline="118" line="118" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="82" endcolumn="87" endline="130" line="130" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
@@ -46,57 +46,57 @@
     <file column="21" endcolumn="26" endline="25" line="25" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
     <file column="21" endcolumn="26" endline="42" line="42" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="16" endcolumn="17" endline="82" line="80" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="20" endcolumn="21" endline="104" line="102" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="16" endcolumn="17" endline="86" line="84" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="12" endcolumn="13" endline="14" line="12" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
     <file column="26" endcolumn="29" endline="34" line="34" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/TransactionBase.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="16" endcolumn="29" endline="87" line="87" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="12" endcolumn="25" endline="89" line="89" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="3">
+  <duplication lines="4">
     <file column="16" endcolumn="37" endline="119" line="116" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="16" endcolumn="37" endline="131" line="128" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="16" endcolumn="33" endline="123" line="123" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
     <file column="16" endcolumn="33" endline="133" line="133" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Bank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="47" endcolumn="72" endline="27" line="27" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs"/>
     <file column="47" endcolumn="72" endline="15" line="15" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="42" endcolumn="61" endline="31" line="31" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs"/>
     <file column="42" endcolumn="61" endline="50" line="50" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ReportGenerator.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="8" endcolumn="9" endline="39" line="39" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/BankAccount.cs"/>
     <file column="8" endcolumn="9" endline="12" line="12" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="8" endcolumn="9" endline="46" line="46" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ReportGenerator.cs"/>
     <file column="8" endcolumn="9" endline="12" line="12" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
     <file column="8" endcolumn="9" endline="13" line="13" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="12" endcolumn="13" endline="27" line="25" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/CurrencyExchangeConverter.cs"/>
     <file column="12" endcolumn="13" endline="40" line="38" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/CurrencyExchangeConverter.cs"/>
     <file column="12" endcolumn="13" endline="58" line="56" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/CurrencyExchangeConverter.cs"/>
   </duplication>
-  <duplication lines="1">
+  <duplication lines="2">
     <file column="12" endcolumn="69" endline="20" line="19" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="12" endcolumn="71" endline="23" line="22" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="58" endcolumn="66" endline="19" line="19" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="58" endcolumn="66" endline="20" line="20" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="58" endcolumn="66" endline="21" line="21" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="46" endcolumn="51" endline="20" line="20" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="106" endcolumn="111" endline="34" line="34" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="108" endcolumn="113" endline="38" line="38" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
@@ -104,7 +104,7 @@
     <file column="21" endcolumn="26" endline="27" line="27" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
     <file column="21" endcolumn="26" endline="44" line="44" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="46" endcolumn="51" endline="21" line="21" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="107" endcolumn="112" endline="35" line="35" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="107" endcolumn="112" endline="39" line="39" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
@@ -112,92 +112,92 @@
     <file column="21" endcolumn="26" endline="26" line="26" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
     <file column="21" endcolumn="26" endline="43" line="43" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="46" endcolumn="51" endline="22" line="22" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="52" endcolumn="57" endline="46" line="46" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="21" endcolumn="26" endline="28" line="28" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
     <file column="21" endcolumn="26" endline="45" line="45" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="59" endcolumn="68" endline="22" line="22" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="59" endcolumn="68" endline="23" line="23" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="46" endcolumn="51" endline="23" line="23" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="105" endcolumn="110" endline="36" line="36" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="52" endcolumn="57" endline="45" line="45" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="21" endcolumn="26" endline="30" line="30" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
     <file column="21" endcolumn="26" endline="47" line="47" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="59" endcolumn="67" endline="25" line="25" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="69" endcolumn="77" endline="25" line="25" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="61" endcolumn="69" endline="26" line="26" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="71" endcolumn="79" endline="26" line="26" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="61" endcolumn="70" endline="27" line="27" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="72" endcolumn="81" endline="27" line="27" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="1">
+  <duplication lines="2">
     <file column="12" endcolumn="159" endline="34" line="33" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="12" endcolumn="158" endline="36" line="35" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="1">
+  <duplication lines="2">
     <file column="12" endcolumn="68" endline="44" line="43" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="12" endcolumn="68" endline="46" line="45" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="59" endcolumn="65" endline="54" line="54" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="50" endcolumn="56" endline="58" line="58" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="12" endcolumn="77" endline="64" line="62" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="12" endcolumn="77" endline="68" line="66" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="12" endcolumn="77" endline="72" line="70" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
     <file column="12" endcolumn="77" endline="76" line="74" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/ExampleBank.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="12" endcolumn="13" endline="31" line="29" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
     <file column="12" endcolumn="13" endline="43" line="41" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="48" endcolumn="81" endline="30" line="30" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
     <file column="48" endcolumn="81" endline="42" line="42" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/Currency.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="12" endcolumn="24" endline="35" line="35" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
     <file column="12" endcolumn="24" endline="50" line="50" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyProvider.cs"/>
     <file column="12" endcolumn="24" endline="37" line="37" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
     <file column="12" endcolumn="24" endline="34" line="34" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="12" endcolumn="63" endline="51" line="51" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithCents.cs"/>
     <file column="12" endcolumn="62" endline="57" line="57" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithCents.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="12" endcolumn="67" endline="32" line="32" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithNoCents.cs"/>
     <file column="12" endcolumn="66" endline="38" line="38" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Money/CurrencyWithNoCents.cs"/>
   </duplication>
-  <duplication lines="3">
+  <duplication lines="4">
     <file column="8" endcolumn="9" endline="21" line="18" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
     <file column="8" endcolumn="9" endline="19" line="17" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="8" endcolumn="9" endline="26" line="24" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
     <file column="8" endcolumn="9" endline="24" line="22" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
     <file column="8" endcolumn="9" endline="25" line="23" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
   </duplication>
-  <duplication lines="0">
+  <duplication lines="1">
     <file column="12" endcolumn="39" endline="25" line="25" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
     <file column="12" endcolumn="40" endline="23" line="23" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/IncommingTransfer.cs"/>
     <file column="12" endcolumn="39" endline="24" line="24" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
   </duplication>
-  <duplication lines="2">
+  <duplication lines="3">
     <file column="8" endcolumn="9" endline="38" line="36" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/ExternalTransfer.cs"/>
     <file column="8" endcolumn="9" endline="35" line="33" path="BankExample.NET/Parasoft.Dottest.Examples.Bank/Transactions/OutgoingTransfer.cs"/>
   </duplication>

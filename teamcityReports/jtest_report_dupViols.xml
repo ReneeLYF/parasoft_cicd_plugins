@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
-  <duplication lines="18">
-    <file column="8" endcolumn="45" endline="114" line="96" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
-    <file column="8" endcolumn="45" endline="108" line="90" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+  <duplication lines="19">
+    <file column="8" endcolumn="45" endline="114" line="96" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="8" endcolumn="45" endline="108" line="90" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
-  <duplication lines="16">
-    <file column="12" endcolumn="12" endline="142" line="126" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
-    <file column="12" endcolumn="12" endline="135" line="119" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+  <duplication lines="17">
+    <file column="12" endcolumn="12" endline="142" line="126" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="12" endcolumn="12" endline="135" line="119" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
-  <duplication lines="9">
-    <file column="8" endcolumn="66" endline="236" line="227" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
-    <file column="8" endcolumn="66" endline="225" line="216" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+  <duplication lines="10">
+    <file column="8" endcolumn="66" endline="236" line="227" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="8" endcolumn="66" endline="225" line="216" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
-  <duplication lines="13">
-    <file column="8" endcolumn="17" endline="253" line="240" path="/parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
-    <file column="8" endcolumn="17" endline="242" line="229" path="/parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
+  <duplication lines="14">
+    <file column="8" endcolumn="17" endline="253" line="240" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore2/BookStoreDB.java"/>
+    <file column="8" endcolumn="17" endline="242" line="229" path="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java"/>
   </duplication>
 </pmd-cpd>
