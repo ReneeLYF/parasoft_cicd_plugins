@@ -1,0 +1,139 @@
+DTP Services: Loading available services from https://192.168.3.130:8443//grs/api/v1.6/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, resources, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+DTP Services: Loading available services from https://192.168.3.130:8443//grs/api/v1/dtpServices
+DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, resources, testExplorer, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter]
+License: Initializing network license for Jtest 10.6 at https://192.168.3.130:8443/licenseserver/api/v1
+License: Activating Custom Edition
+License: Checking features ...
+License: Main feature "Jtest" status: License OK.
+License: Feature "Unit Test" status: License OK.
+License: Feature "Static Analysis" status: License OK.
+License: Feature "Coverage" status: License OK.
+License: Feature "Flow Analysis" status: License OK.
+License: Feature "Change Based Testing" status: License OK.
+License: Feature "Security Rules" status: License OK.
+License: Feature "Unit Test Spring Framework" status: License OK.
+License: Feature "CWE Rules" status: License OK.
+License: Feature "Unit Test Bulk Creation" status: License OK.
+License: Feature "OWASP Rules" status: License OK.
+License: Feature "Unit Test Tier 1" status: This feature is not available in current license.
+License: Feature "PCI DSS Rules" status: License OK.
+License: Feature "Unit Test Tier 2" status: This feature is not available in current license.
+License: Feature "DISA STIG Rules" status: License OK.
+License: Feature "Unit Test Tier 3" status: This feature is not available in current license.
+License: Feature "DTP Publish" status: License OK.
+License: Feature "Unit Test Tier 4" status: This feature is not available in current license.
+License: Feature "Automation" status: License OK.
+License: Feature "Desktop Command Line" status: License OK.
+License: Activation finished: License OK.
+License: Machine id WIN32-3de5ec8f (Default)
+Rule update service scanning directory: D:\Parasoft\Products\Jtest\parasoft_jtest_2022.1.0_win32_x86_64\jtest\rules\user for provider com.parasoft.jtest.rules.rulewizard.user
+Rules file is up to date, skipped update
+DTP Share repository is disabled, use dtp.share.enabled to enable
+Choosing repository: LocalSharingRepository after skipping disabled types: DTPSharingRepository, 
+Deleting old shared rules from directory D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\.jtest\rules\team
+Fetching shared rules for com.parasoft.jtest.rules.rulewizard.team
+Downloaded rules: 0
+Rule update service scanning directory: D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\.jtest\rules\team for provider com.parasoft.jtest.rules.rulewizard.team
+using categories description file: file:/D:/Workspace/workspace_cicd_plugins/DupViolsDemoProject/.jtest/rules/team/categories.properties
+Rules have changed, performing update
+Rules refresh service, found rules: D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\.jtest\rules\team
+Rules refresh service, successfully written rules descriptions file: D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\.jtest\rules\team\rules.xml
+Configuration: jtest_settings (D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\config\jtest_settings.properties).
+Command line: jtestcli -config config/jtest_settings.properties -data demo.data.json -settings config/localsettings.properties -report build/reports/jtest/static
+[ 0%] > Computing testing context.
+[ 2%] < Computing testing context.: 100% 
+[ 2%] > PreAnalysis
+[ 5%] < PreAnalysis: 100% 
+[ 5%] > Scope
+[ 5%] > Scope > Resources Filter
+Code Duplication: parser with 4 active rule(s) is enabled.
+Code Duplication: Duplicates detection is enabled.
+[ 5%] > Analysis
+[ 5%] > Analysis > Scope Analyzer
+[ 5%] > Analysis > Code Duplication
+[ 5%] > Analysis > Java Static
+[ 5%] > Results
+[ 5%] > Results > Metrics processor
+[ 5%] > Results > Scope Processor
+[ 5%] > Results > Duplicates Processor
+[ 5%] > Results > Tokens Mismatch Filter Processor
+[ 5%] > Results > Rule Limit Processor
+Applying limit of maximum violations per rule: 1,000 
+DTP Services: Loading available services from https://192.168.3.130:8443//grs/api/v1.9/dtpServices
+DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, resources, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations]
+[ 5%] > Results > Metadata Processor
+[ 5%] > Results > Author Processor
+[ 5%] > Results > Suppression Processor
+[ 5%] > Results > Coverage Processor
+[ 5%] > Results > Goals Processor
+Sending reports by mail is disabled, use report.mail.enabled setting to enable.
+Publishing reports to DTP is disabled, use report.dtp.publish setting to enable.
+[ 5%] > Reporting
+[ 5%] > Scope > Resources Filter > Checking resources to exclude
+[ 5%] < Scope > Resources Filter > Checking resources to exclude: 1 of 1 
+[ 5%]   Scope: accepted /com.parasoft:parabank/.../DulipcateMethod.java
+[ 9%] < Scope > Resources Filter: rejected 0 of 1 analyzed inputs 
+[ 9%] < Scope: rejected 0 of 1 analyzed inputs                                    >>> Scope time 0s
+[ 9%]   Analysis > Scope Analyzer: analyzed /com.parasoft:parabank/.../DulipcateMethod.java
+[ 9%] < Analysis > Scope Analyzer: analyzed 1 
+[ 9%]   Analysis > Code Duplication: Parsed /com.parasoft:parabank/.../DulipcateMethod.java
+[15%] < Analysis > Code Duplication: Parsed 1 of 1 inputs                         >>> Code Duplication time 0.01s
+[15%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPM 
+[15%] < Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPM 
+[15%] > Analysis > Code Duplication: Collecting violations for rule CDD.DUPM 
+[23%] < Analysis > Code Duplication: Collecting violations for rule CDD.DUPM 
+[23%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPT 
+[23%] < Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPT 
+[23%] > Analysis > Code Duplication: Collecting violations for rule CDD.DUPT 
+[30%] < Analysis > Code Duplication: Collecting violations for rule CDD.DUPT 
+[30%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPC 
+[36%] < Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPC 
+[36%] > Analysis > Code Duplication: Collecting violations for rule CDD.DUPC 
+[36%] < Analysis > Code Duplication: Collecting violations for rule CDD.DUPC 
+[36%] > Analysis > Code Duplication: Analyzing code patterns for rule CDD.DUPS 
+[36%] > Analysis > Code Duplication: Matching code patterns for rule CDD.DUPS 
+[43%] < Analysis > Code Duplication: Matching code patterns for rule CDD.DUPS 
+[50%]   Analysis > Java Static: found 0 violations in /com.parasoft:parabank/.../DulipcateMethod.java
+[72%] < Analysis > Java Static: found 0 violations on analyzed 1 of 1 inputs, skipped 0       >>> Java Static time 0.03s
+[72%] < Analysis: found 0 violations                                              >>> Analysis time 0.15s
+[72%] < Results > Metrics processor: processed 0 accepted violations 
+[72%] < Results > Scope Processor: removed 0 of 0 violations 
+[72%] < Results > Duplicates Processor: removed 0 of 0 violations  
+[72%] < Results > Tokens Mismatch Filter Processor: processed 0 accepted violations 
+[72%] < Results > Rule Limit Processor: removed 0 of 0 violations  
+[87%] < Results > Metadata Processor: DTP metadata available for 0 of 0 applicable findings  
+[87%] < Results > Author Processor: reassigned 0 of 0 accepted violations 
+[90%] < Results > Suppression Processor: suppressed 0 of 0 accepted violations 
+[90%] < Results > Coverage Processor: processed 0 of 0 coverage infos 
+[92%] < Results > Goals Processor: processed 0 accepted violations 
+[95%] < Results: processed 0 accepted violations                                  >>> Results time 0s
+[95%] < Reporting: reported 0 accepted violations                                 >>> Reporting time 0.04s
+[95%]                                                                             >>> Total time 0.99s
+[95%] > Finalizing reporters.
+Files in scope: 1
+Rules violated: 0/6
+Metrics enabled: 0
+Static analysis violations: 0
+Suppressed violations: 0
+Unit Tests failures: 0
+Executed test cases: 0
+Coverage: 0/0 lines (0% covered)
+Running time in seconds : 3
+[95%]   Finalizing reporters.: 12% 
+The following setup problems have been encountered during analysis:
+  Project compilation problems:
+    - Project 'com.parasoft:parabank' contains compilation problems
+  Compilation setup problems:
+    - Compilation error during Static Analysis:
+       D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\src\com\demo\duplication\DulipcateMethod.java:5: Duplicate method Method1() in type DulipcateMethod
+  The following dependencies do not exist:
+    - D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject/lib/junit-4.13.2.jar
+    - D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject/lib/servlet-api-2.4.jar
+Generated XML report: D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\build\reports\jtest\static\report.xml
+Generated HTML report: D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\build\reports\jtest\static\report.html
+[96%]   Finalizing reporters.: 25% 
+Generated report archive: D:\Workspace\workspace_cicd_plugins\DupViolsDemoProject\build\reports\jtest\static\report.zip
+[100%] < Finalizing reporters.: 100% 
+Creating technical support archive on application exit
+Technical support archive created: C:\jenkins\workspace\sonarqube_integration_test\TechnicalSupport_17.zip
