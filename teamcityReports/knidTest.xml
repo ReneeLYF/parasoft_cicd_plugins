@@ -2,18 +2,15 @@
 <pmd>
   <file name="/com.parasoft:parabank/src/main/java/com/parasoft/bookstore/BookStoreDB.java">
     <violation beginline="85" endline="85" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="com.parasoft.bookstore">JDBC 结果集未关闭: stmt.resultSet()
-    <div>
-    <div> - BookStoreDB.java:61 String query = "SELECT DISTINCT " + </div>
-    <div> - BookStoreDB.java:75 titlePart.toLowerCase() +"%' AND " + </div>
-    <div> - BookStoreDB.java:61 String query = "SELECT DISTINCT " + </div>
-    <div> - BookStoreDB.java:80 BookStoreDB db = getDBInstance(); </div>
-    <div> - BookStoreDB.java:81 Statement stmt = db.getConnection().createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE); </div>
-    <div> <span> - 指向资源分配的位置
-     BookStoreDB.java:82 stmt.executeQuery(query) </span> <span style="{color: red}">***分配的资源变量: stmt.resultSet(), stmt.executeQuery(query) </span></div>
-    <div> - BookStoreDB.java:82 Book[] books= getByTitleLike(stmt.executeQuery(query), titlePart);***BookStoreDB.getByTitleLike() 抛出 SQLException </div>
-    <div> - 指向已分配资源丢失的位置 </div>
-     BookStoreDB.java:85 ***分配的资源变量: stmt.resultSet()
-     </div>
-     </violation>
+    - BookStoreDB.java:61 String query = "SELECT DISTINCT " +
+    - BookStoreDB.java:75 titlePart.toLowerCase() +"%' AND " +
+    - BookStoreDB.java:61 String query = "SELECT DISTINCT " +
+    - BookStoreDB.java:80 BookStoreDB db = getDBInstance();
+    - BookStoreDB.java:81 Statement stmt = db.getConnection().createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+    - 指向资源分配的位置
+     BookStoreDB.java:82 stmt.executeQuery(query)<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" color="red">***分配的资源变量: stmt.resultSet(), stmt.executeQuery(query)</fo:block>
+    - BookStoreDB.java:82 Book[] books= getByTitleLike(stmt.executeQuery(query), titlePart);<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" color="red">***BookStoreDB.getByTitleLike() 抛出 SQLException</fo:block>
+    - 指向已分配资源丢失的位置
+     BookStoreDB.java:85 }<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" color="red">***分配的资源变量: stmt.resultSet()</fo:block></violation>
   </file>
 </pmd>
