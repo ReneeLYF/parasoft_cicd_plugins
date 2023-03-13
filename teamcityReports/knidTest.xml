@@ -8,9 +8,21 @@
     - BookStoreDB.java:80 BookStoreDB db = getDBInstance();
     - BookStoreDB.java:81 Statement stmt = db.getConnection().createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
     - 指向资源分配的位置
-     BookStoreDB.java:82 stmt.executeQuery(query)<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" color="red">***分配的资源变量: stmt.resultSet(), stmt.executeQuery(query)</fo:block>
-    - BookStoreDB.java:82 Book[] books= getByTitleLike(stmt.executeQuery(query), titlePart);<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" color="red">***BookStoreDB.getByTitleLike() 抛出 SQLException</fo:block>
+     BookStoreDB.java:82 stmt.executeQuery(query)***分配的资源变量: stmt.resultSet(), stmt.executeQuery(query)
+                body {
+                    color: red;
+                }
+            
+    - BookStoreDB.java:82 Book[] books= getByTitleLike(stmt.executeQuery(query), titlePart);***BookStoreDB.getByTitleLike() 抛出 SQLException
+                body {
+                    color: red;
+                }
+            
     - 指向已分配资源丢失的位置
-     BookStoreDB.java:85 }<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" color="red">***分配的资源变量: stmt.resultSet()</fo:block></violation>
+     BookStoreDB.java:85 }***分配的资源变量: stmt.resultSet()
+                body {
+                    color: red;
+                }
+            </violation>
   </file>
 </pmd>
