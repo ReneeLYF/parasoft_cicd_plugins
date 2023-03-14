@@ -1,85 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
-   <duplication lines="0" tokens="-1">
-      <file column="8"
-            endcolumn="17"
-            endline="11"
-            line="11"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DFI.java"/>
-      <file column="8"
-            endcolumn="17"
-            endline="17"
-            line="17"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DFI.java"/>
-   </duplication>
-   <duplication lines="7" tokens="-1">
-      <file column="8"
-            endcolumn="8"
-            endline="17"
-            line="10"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPC.java"/>
-      <file column="8"
-            endcolumn="8"
-            endline="26"
-            line="19"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPC.java"/>
-   </duplication>
-   <duplication lines="0" tokens="-1">
-      <file column="0"
-            endcolumn="24"
-            endline="3"
-            line="3"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPI.java"/>
-      <file column="0"
-            endcolumn="24"
-            endline="4"
-            line="4"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPI.java"/>
-   </duplication>
-   <duplication lines="3" tokens="-1">
-      <file column="4"
-            endcolumn="4"
-            endline="10"
-            line="7"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPM.java"/>
-      <file column="4"
-            endcolumn="4"
-            endline="17"
-            line="14"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPM.java"/>
-   </duplication>
-   <duplication lines="0" tokens="-1">
-      <file column="27"
-            endcolumn="34"
-            endline="8"
-            line="8"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPM.java"/>
-      <file column="27"
-            endcolumn="34"
-            endline="15"
-            line="15"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPM.java"/>
-      <file column="27"
-            endcolumn="34"
-            endline="8"
-            line="8"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPS.java"/>
-      <file column="27"
-            endcolumn="34"
-            endline="14"
-            line="14"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPS.java"/>
-   </duplication>
-   <duplication lines="0" tokens="-1">
-      <file column="27"
-            endcolumn="34"
-            endline="9"
-            line="9"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPM.java"/>
-      <file column="27"
-            endcolumn="34"
-            endline="16"
-            line="16"
-            path="/DupViolsDemoProject/src/main/java/examples/rules/cdd/DUPM.java"/>
-   </duplication>
+  <duplication lines="0" tokens="-1">
+    <file column="8" endcolumn="17" endline="11" line="11" path="/src/main/java/examples/rules/cdd/DFI.java"/>
+    <file column="8" endcolumn="17" endline="17" line="17" path="/src/main/java/examples/rules/cdd/DFI.java"/>
+  </duplication>
+  <duplication lines="7" tokens="-1">
+    <file column="8" endcolumn="8" endline="17" line="10" path="/src/main/java/examples/rules/cdd/DUPC.java"/>
+    <file column="8" endcolumn="8" endline="26" line="19" path="/src/main/java/examples/rules/cdd/DUPC.java"/>
+  </duplication>
+  <duplication lines="0" tokens="-1">
+    <file column="0" endcolumn="24" endline="3" line="3" path="/src/main/java/examples/rules/cdd/DUPI.java"/>
+    <file column="0" endcolumn="24" endline="4" line="4" path="/src/main/java/examples/rules/cdd/DUPI.java"/>
+  </duplication>
+  <duplication lines="3" tokens="-1">
+    <file column="4" endcolumn="4" endline="10" line="7" path="/src/main/java/examples/rules/cdd/DUPM.java"/>
+    <file column="4" endcolumn="4" endline="17" line="14" path="/src/main/java/examples/rules/cdd/DUPM.java"/>
+    <file column="4" endcolumn="4" endline="16" line="13" path="/src/main/java/examples/rules/cdd/DUPT.java"/>
+    <file column="5" endcolumn="5" endline="20" line="17" path="/src/main/java/examples/rules/cdd/DUPT.java"/>
+    <file column="4" endcolumn="4" endline="30" line="27" path="/src/main/java/examples/rules/cdd/DUPT.java"/>
+    <file column="4" endcolumn="4" endline="34" line="31" path="/src/main/java/examples/rules/cdd/DUPT.java"/>
+  </duplication>
+  <duplication lines="0" tokens="-1">
+    <file column="27" endcolumn="34" endline="8" line="8" path="/src/main/java/examples/rules/cdd/DUPM.java"/>
+    <file column="27" endcolumn="34" endline="15" line="15" path="/src/main/java/examples/rules/cdd/DUPM.java"/>
+    <file column="27" endcolumn="34" endline="8" line="8" path="/src/main/java/examples/rules/cdd/DUPS.java"/>
+    <file column="27" endcolumn="34" endline="14" line="14" path="/src/main/java/examples/rules/cdd/DUPS.java"/>
+  </duplication>
+  <duplication lines="0" tokens="-1">
+    <file column="27" endcolumn="34" endline="9" line="9" path="/src/main/java/examples/rules/cdd/DUPM.java"/>
+    <file column="27" endcolumn="34" endline="16" line="16" path="/src/main/java/examples/rules/cdd/DUPM.java"/>
+  </duplication>
+  <duplication lines="12" tokens="-1">
+    <file column="0" endcolumn="0" endline="21" line="9" path="/src/main/java/examples/rules/cdd/DUPT.java"/>
+    <file column="0" endcolumn="0" endline="35" line="23" path="/src/main/java/examples/rules/cdd/DUPT.java"/>
+  </duplication>
 </pmd-cpd>
