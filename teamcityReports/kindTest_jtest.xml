@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd>
+  <file name="/com.parasoft:demo/src/main/java/examples/eval/Simple.java">
+    <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="2" rule="PB.TYPO.TLS" ruleset="Typographical Errors" package="examples.eval">Text label 'case10' may be a typo for 'case 10'</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/eval/Simple.java">
+    <violation beginline="24" endline="24" begincolumn="12" endcolumn="18" priority="3" rule="UC.AUL" ruleset="Unused Code" package="examples.eval">Avoid unused label: case10</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
+    <violation beginline="16" endline="16" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
+    <violation beginline="29" endline="29" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
+    <violation beginline="12" endline="12" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
+    <violation beginline="26" endline="26" begincolumn="16" endcolumn="20" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'read' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
+    <violation beginline="12" endline="12" begincolumn="19" endcolumn="23" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'sock' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="17" endline="17" begincolumn="19" endcolumn="35" priority="1" rule="PB.USC.UIF" ruleset="Useless Code" package="examples.flowanalysis">The "else" condition always evaluates to "false" because of previous branches</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="18" endline="18" begincolumn="19" endcolumn="40" priority="1" rule="PB.USC.UIF" ruleset="Useless Code" package="examples.flowanalysis">The "else" condition always evaluates to "false" because of previous branches</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="47" endline="47" begincolumn="10" endcolumn="18" priority="3" rule="OPT.SI" ruleset="Optimization" package="examples.flowanalysis">Member class could be declared "static": Consumer</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java">
+    <violation beginline="28" endline="28" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="Logical Errors" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
+    <violation beginline="43" endline="43" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="Logical Errors" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
+    <violation beginline="55" endline="55" begincolumn="15" endcolumn="19" priority="2" rule="PB.LOGIC.OAMC" ruleset="Logical Errors" package="examples.flowanalysis">'hasNext()' is called on the variable "iter" in the loop's condition, but 'next()' is never called on this variable in the loop's body</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
+    <violation beginline="18" endline="18" begincolumn="19" endcolumn="24" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'value' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
+    <violation beginline="32" endline="32" begincolumn="19" endcolumn="22" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'key' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapUsage.java">
+    <violation beginline="33" endline="33" begincolumn="19" endcolumn="24" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.flowanalysis">Variable 'value' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java">
+    <violation beginline="55" endline="55" begincolumn="17" endcolumn="29" priority="3" rule="OPT.SI" ruleset="Optimization" package="examples.flowanalysis">Member class could be declared "static": ValueStorage</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
+    <violation beginline="116" endline="116" begincolumn="24" endcolumn="36" priority="3" rule="UC.AURCO" ruleset="Unused Code" package="examples.nbank">'List' field '_accountsLog' is never read</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/CreditCard.java">
+    <violation beginline="104" endline="104" begincolumn="12" endcolumn="42" priority="2" rule="PB.CUB.UEIC" ruleset="Confusing or Unintended Behavior" package="examples.nbank">"!=" is used when comparing 'String' Objects. 'equals()' should be used instead</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
+    <violation beginline="86" endline="86" begincolumn="40" endcolumn="41" priority="1" rule="JDBC.BRSA" ruleset="Java Database Connectivity" package="examples.nbank">'0' is not a valid index value for this method call</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/queue/Queue.java">
+    <violation beginline="46" endline="46" begincolumn="16" endcolumn="30" priority="2" rule="PB.CUB.UEIC" ruleset="Confusing or Unintended Behavior" package="examples.queue">"!=" is used when comparing Objects. 'equals()' should be used instead</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/queue/Queue.java">
+    <violation beginline="58" endline="58" begincolumn="18" endcolumn="27" priority="3" rule="OPT.SI" ruleset="Optimization" package="examples.queue">Member class could be declared "static": QueueItem</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
+    <violation beginline="59" endline="59" begincolumn="23" endcolumn="34" priority="2" rule="PB.USC.FCBS" ruleset="Useless Code" package="examples.security">The field '_connection' is used but is never assigned a non-"null" value</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
+    <violation beginline="32" endline="32" begincolumn="19" endcolumn="21" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.servlets">Variable 'pr' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
+    <violation beginline="34" endline="34" begincolumn="19" endcolumn="21" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.servlets">Variable 'pr' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/stackmachine/CommandLineStackMachine.java">
+    <violation beginline="79" endline="79" begincolumn="20" endcolumn="25" priority="3" rule="UC.AURV" ruleset="Unused Code" package="examples.stackmachine">Variable 'value' is never used</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
+    <violation beginline="13" endline="13" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Security context not disposed: GSSManager.getInstance().createContext(tokens)
+        - AlwaysCloseGSS.java:10   byte[] inputBuff = new byte[256];
+        - Point where the resource is allocated
+           AlwaysCloseGSS.java:11   GSSManager.getInstance().createContext(tokens).initSecContext(inputBuff, 0, 256);  *** Allocated resource variable: GSSManager.getInstance().createContext(tokens)
+        - Point where the allocated resource is lost
+           AlwaysCloseGSS.java:13   }  *** Allocated resource variable: GSSManager.getInstance().createContext(tokens)</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseGSS.java">
+    <violation beginline="29" endline="29" begincolumn="16" endcolumn="34" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"context" may possibly be null
+        - Source of null value
+           AlwaysCloseGSS.java:19   GSSContext context = null;  *** Null value carrier: context
+        - AlwaysCloseGSS.java:21   context = GSSManager.getInstance().createContext(tokens)  *** GSSManager.createContext() throws GSSException
+        - AlwaysCloseGSS.java:25   catch (Exception ioe)
+        - AlwaysCloseGSS.java:26   System.out.println("Exception occured: " + ioe);
+        - NullPointerException point
+           AlwaysCloseGSS.java:29   context.dispose();  *** Null value carrier: context</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
+    <violation beginline="16" endline="16" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Image resource not closed: imgReader
+        - AlwaysCloseImages.java:12   Image image = null;
+        - Point where the resource is allocated
+           AlwaysCloseImages.java:14   ImageReader imgReader = spi.createReaderInstance();  *** Allocated resource variable: imgReader
+        - AlwaysCloseImages.java:15   image = imgReader.read(0)  *** ImageReader.read() throws IOException
+        - Point where the allocated resource is lost
+           AlwaysCloseImages.java:16   }  *** Allocated resource variable: imgReader</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseImages.java">
+    <violation beginline="31" endline="31" begincolumn="12" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"imgReader" may possibly be null
+        - AlwaysCloseImages.java:23   Image image = null;
+        - Source of null value
+           AlwaysCloseImages.java:24   ImageReader imgReader = null;  *** Null value carrier: imgReader
+        - AlwaysCloseImages.java:26   imgReader = spi.createReaderInstance()  *** ImageReaderSpi.createReaderInstance() throws IOException
+        - AlwaysCloseImages.java:28   catch (Exception e)
+        - AlwaysCloseImages.java:29   System.out.println("Exception occured: " + e);
+        - NullPointerException point
+           AlwaysCloseImages.java:31   imgReader.dispose();  *** Null value carrier: imgReader</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseLogging.java">
+    <violation beginline="13" endline="13" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Logging handler not closed: handler
+        - Point where the resource is allocated
+           AlwaysCloseLogging.java:10   ConsoleHandler handler = new ConsoleHandler();  *** Allocated resource variable: new ConsoleHandler()
+        - AlwaysCloseLogging.java:11   LogRecord record = new LogRecord(level, message);  *** Allocated resource variable: handler
+        - AlwaysCloseLogging.java:12   handler.publish(record);
+        - Point where the allocated resource is lost
+           AlwaysCloseLogging.java:13   }  *** Allocated resource variable: handler</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
+    <violation beginline="18" endline="18" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">NIO channel not closed: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel
+        - AlwaysCloseNIOChannels.java:13   FileInputStream fInput = new FileInputStream(filename);
+        - Point where the resource is allocated
+           AlwaysCloseNIOChannels.java:14   FileChannel channel = fInput.getChannel();  *** Allocated resource variable: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel
+        - AlwaysCloseNIOChannels.java:15   ByteBuffer dst = ByteBuffer.allocate(512);
+        - AlwaysCloseNIOChannels.java:16   int read = channel.read(dst);  *** FileChannel.read() throws IOException
+        - Point where the allocated resource is lost
+           AlwaysCloseNIOChannels.java:18   }  *** Allocated resource variable: &lt;FileInputStream referenced by channel&gt;.getChannel(), fInput.getChannel(), channel</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseNIOChannels.java">
+    <violation beginline="35" endline="35" begincolumn="16" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"channel" may possibly be null
+        - Source of null value
+           AlwaysCloseNIOChannels.java:24   FileChannel channel = null;  *** Null value carrier: channel
+        - AlwaysCloseNIOChannels.java:26   new FileInputStream(filename)  *** FileInputStream.FileInputStream() throws FileNotFoundException
+        - AlwaysCloseNIOChannels.java:31   catch (Exception ioe)
+        - AlwaysCloseNIOChannels.java:32   System.out.println("Exception occured: " + ioe);
+        - NullPointerException point
+           AlwaysCloseNIOChannels.java:35   channel.close();  *** Null value carrier: channel</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
+    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">File not closed: raf
+        - AlwaysCloseRAFs.java:8   String res = null;
+        - Point where the resource is allocated
+           AlwaysCloseRAFs.java:10   RandomAccessFile raf = new RandomAccessFile(sFileName, sMode);  *** Allocated resource variable: new RandomAccessFile(sFileName, sMode)
+        - AlwaysCloseRAFs.java:11   byte[] bytes = new byte[512];  *** Allocated resource variable: raf
+        - AlwaysCloseRAFs.java:12   int read = raf.read(bytes, offset, bytes.length);  *** RandomAccessFile.read() throws IOException
+        - Point where the allocated resource is lost
+           AlwaysCloseRAFs.java:14   }  *** Allocated resource variable: raf</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseRAFs.java">
+    <violation beginline="32" endline="32" begincolumn="16" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"raf" may possibly be null
+        - AlwaysCloseRAFs.java:21   String res = null;
+        - Source of null value
+           AlwaysCloseRAFs.java:22   RandomAccessFile raf = null;  *** Null value carrier: raf
+        - AlwaysCloseRAFs.java:24   new RandomAccessFile(sFileName, sMode)  *** RandomAccessFile.RandomAccessFile() throws FileNotFoundException
+        - AlwaysCloseRAFs.java:28   catch (Exception e)
+        - AlwaysCloseRAFs.java:29   System.out.println();
+        - NullPointerException point
+           AlwaysCloseRAFs.java:32   raf.close();  *** Null value carrier: raf</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
+    <violation beginline="14" endline="14" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Socket not closed: sock
+        - Point where the resource is allocated
+           AlwaysCloseSockets.java:12   Socket sock = srvSocket.accept();  *** Allocated resource variable: sock
+        - Point where the allocated resource is lost
+           AlwaysCloseSockets.java:14   }  *** Allocated resource variable: sock</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseSockets.java">
+    <violation beginline="28" endline="28" begincolumn="16" endcolumn="29" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"sock" may possibly be null
+        - Source of null value
+           AlwaysCloseSockets.java:20   Socket sock = null;  *** Null value carrier: sock
+        - AlwaysCloseSockets.java:22   sock = srvSocket.accept()  *** ServerSocket.accept() throws IOException
+        - AlwaysCloseSockets.java:24   catch (IOException ioe)
+        - AlwaysCloseSockets.java:25   System.out.println("Exception occured: " + ioe);
+        - NullPointerException point
+           AlwaysCloseSockets.java:28   sock.close();  *** Null value carrier: sock</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
+    <violation beginline="52" endline="52" begincolumn="12" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"encoder" may possibly be null
+        - Source of null value
+           AlwaysCloseXMLEncDec.java:43   XMLEncoder encoder = null;  *** Null value carrier: encoder
+        - AlwaysCloseXMLEncDec.java:45   new XMLEncoder(out)  *** XMLEncoder.XMLEncoder() throws IllegalArgumentException
+        - AlwaysCloseXMLEncDec.java:49   catch (Exception e)
+        - AlwaysCloseXMLEncDec.java:50   System.out.println("Exception occured: " + e);
+        - NullPointerException point
+           AlwaysCloseXMLEncDec.java:52   encoder.close();  *** Null value carrier: encoder</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/AlwaysCloseXMLEncDec.java">
+    <violation beginline="71" endline="71" begincolumn="12" endcolumn="28" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"decoder" may possibly be null
+        - AlwaysCloseXMLEncDec.java:57   Vector vObjs = new Vector();
+        - Source of null value
+           AlwaysCloseXMLEncDec.java:58   XMLDecoder decoder = null;  *** Null value carrier: decoder
+        - AlwaysCloseXMLEncDec.java:60   new XMLDecoder(in)  *** XMLDecoder.XMLDecoder() throws IllegalArgumentException
+        - AlwaysCloseXMLEncDec.java:68   catch (Exception e)
+        - AlwaysCloseXMLEncDec.java:69   System.out.println("Exception occured: " + e);
+        - NullPointerException point
+           AlwaysCloseXMLEncDec.java:71   decoder.close();  *** Null value carrier: decoder</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="17" endline="17" begincolumn="15" endcolumn="38" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "code == 0" always evaluates to false
+        - Start of the path
+           DivisionByZero.java:14   calculateDiscountedSum(int code, float initialSum, Consumer person)
+        - DivisionByZero.java:15   float discountedSum = calculateCommonDiscountedSum(initialSum);
+           - DivisionByZero.java:33   float discountedSum = 0.0f;
+           - DivisionByZero.java:34   if (initialSum &gt; 5.0f) {  *** Condition evaluation: (initialSum &gt; 5.0) (assuming false)
+           - DivisionByZero.java:37   if (initialSum &lt; 5.0f) {  *** Condition evaluation: (initialSum &lt; 5.0) (assuming false)
+           - DivisionByZero.java:40   return discountedSum;
+        - DivisionByZero.java:16   if (code == PERSONAL_DISCOUNT) {  *** Condition evaluation: (code == 0) (assuming false)
+        - Point where senseless condition is used
+           DivisionByZero.java:17   if (code == DISCOUNT) {</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="18" endline="18" begincolumn="15" endcolumn="43" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "code == 0" always evaluates to false
+        - Start of the path
+           DivisionByZero.java:14   calculateDiscountedSum(int code, float initialSum, Consumer person)
+        - DivisionByZero.java:15   float discountedSum = calculateCommonDiscountedSum(initialSum);
+           - DivisionByZero.java:33   float discountedSum = 0.0f;
+           - DivisionByZero.java:34   if (initialSum &gt; 5.0f) {  *** Condition evaluation: (initialSum &gt; 5.0) (assuming false)
+           - DivisionByZero.java:37   if (initialSum &lt; 5.0f) {  *** Condition evaluation: (initialSum &lt; 5.0) (assuming false)
+           - DivisionByZero.java:40   return discountedSum;
+        - DivisionByZero.java:16   if (code == PERSONAL_DISCOUNT) {  *** Condition evaluation: (code == 0) (assuming false)
+        - DivisionByZero.java:17   if (code == DISCOUNT) {  *** Condition evaluation: (code == 0) (false)
+        - Point where senseless condition is used
+           DivisionByZero.java:18   if (code == SPECIAL_OFFER) {</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/DivisionByZero.java">
+    <violation beginline="22" endline="22" begincolumn="12" endcolumn="75" priority="1" rule="BD.PB.ZERO" ruleset="Possible Bugs" package="examples.flowanalysis">Division by "discountedSum" which may possibly be zero
+        - Start of the path
+           DivisionByZero.java:15   float discountedSum = calculateCommonDiscountedSum(initialSum);
+           - DivisionByZero.java:33   float discountedSum = 0.0f;
+           - DivisionByZero.java:34   if (initialSum &gt; 5.0f) {  *** Condition evaluation: (initialSum &gt; 5.0) (assuming false)
+           - DivisionByZero.java:37   if (initialSum &lt; 5.0f) {  *** Condition evaluation: (initialSum &lt; 5.0) (assuming false)
+           - DivisionByZero.java:40   return discountedSum;
+        - DivisionByZero.java:16   if (code == PERSONAL_DISCOUNT) {  *** Condition evaluation: (code == 0) (assuming true)
+        - DivisionByZero.java:21   if (code == PERSONAL_DISCOUNT) {  *** Condition evaluation: (code == 0) (true)
+        - Point of division by zero
+           DivisionByZero.java:22   float progressionCoef = person.getOverallSum() / discountedSum;</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/FilesInjection.java">
+    <violation beginline="27" endline="27" begincolumn="12" endcolumn="25" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis">"fOut" may possibly be null
+        - Source of null value
+           FilesInjection.java:21   FileOutputStream fOut = null;  *** Null value carrier: fOut
+        - FilesInjection.java:23   String sFileName = storyName;
+        - FilesInjection.java:24   new FileOutputStream(sFileName)  *** FileOutputStream.FileOutputStream() throws FileNotFoundException
+        - NullPointerException point
+           FilesInjection.java:27   fOut.close();  *** Null value carrier: fOut</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/IncorrectIteratorUsage.java">
+    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified
+        - Iterator creation point
+           IncorrectIteratorUsage.java:15   Iterator&lt;?&gt; iter = collection.iterator();  *** Tracked iterators: iter  *** Tracked collections: collection
+        - IncorrectIteratorUsage.java:16   while (iter.hasNext()) {  *** Loop condition evaluation: iter.hasNext() (assuming true)  *** Entering the loop
+        - IncorrectIteratorUsage.java:17   Object obj = iter.next();
+        - IncorrectIteratorUsage.java:18   if (tp.isAssignableFrom(obj.getClass())) {  *** Condition evaluation: tp.isAssignableFrom(obj.getClass()) (assuming false)
+        - IncorrectIteratorUsage.java:21   collection.remove(obj);  *** Collection modification point
+        - Iterator usage point
+           IncorrectIteratorUsage.java:16   iter.hasNext()  *** Tracked iterators: iter  *** Tracked collections: collection</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientCollectionRemoval.java">
+    <violation beginline="15" endline="15" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified
+        - Iterator creation point
+           InefficientCollectionRemoval.java:14   Iterator&lt;?&gt; iter = collection.iterator();  *** Tracked iterators: iter  *** Tracked collections: collection
+        - InefficientCollectionRemoval.java:15   while (iter.hasNext()) {  *** Loop condition evaluation: iter.hasNext() (assuming true)  *** Entering the loop
+        - InefficientCollectionRemoval.java:16   Object element = iter.next();
+        - InefficientCollectionRemoval.java:17   collection.remove(element);  *** Collection modification point
+        - Iterator usage point
+           InefficientCollectionRemoval.java:15   iter.hasNext()  *** Tracked iterators: iter  *** Tracked collections: collection</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
+    <violation beginline="16" endline="16" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified
+        - Iterator creation point
+           InefficientMapRemoval.java:15   Iterator&lt;?&gt; iter = map.keySet().iterator();  *** Tracked iterators: iter  *** Tracked collections: map
+        - InefficientMapRemoval.java:16   while (iter.hasNext()) {  *** Loop condition evaluation: iter.hasNext() (assuming true)  *** Entering the loop
+        - InefficientMapRemoval.java:17   Object key = iter.next();
+        - InefficientMapRemoval.java:18   map.remove(key);  *** Collection modification point
+        - Iterator usage point
+           InefficientMapRemoval.java:16   iter.hasNext()  *** Tracked iterators: iter  *** Tracked collections: map</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/InefficientMapRemoval.java">
+    <violation beginline="29" endline="29" begincolumn="15" endcolumn="29" priority="1" rule="BD.CO.ITMOD" ruleset="Collections" package="examples.flowanalysis">Iterator "iter" may possibly be used after iterated collection is modified
+        - Iterator creation point
+           InefficientMapRemoval.java:28   Iterator&lt;?&gt; iter = map.entrySet().iterator();  *** Tracked iterators: iter  *** Tracked collections: map
+        - InefficientMapRemoval.java:29   while (iter.hasNext()) {  *** Loop condition evaluation: iter.hasNext() (assuming true)  *** Entering the loop
+        - InefficientMapRemoval.java:30   Entry&lt;?, ?&gt; entry = (Entry&lt;?, ?&gt;) iter.next();
+        - InefficientMapRemoval.java:31   Object key = entry.getKey();
+        - InefficientMapRemoval.java:32   map.remove(key);  *** Collection modification point
+        - Iterator usage point
+           InefficientMapRemoval.java:29   iter.hasNext()  *** Tracked iterators: iter  *** Tracked collections: map</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
+    <violation beginline="11" endline="11" begincolumn="15" endcolumn="56" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "result instanceof RuntimeException" always evaluates to false
+        - Start of the path
+           UnreachableCode.java:8   printCalculationResult(Object result)
+        - UnreachableCode.java:9   if (result instanceof Exception) {  *** Condition evaluation: result instanceof java.lang.Exception (assuming false)
+        - Point where senseless condition is used
+           UnreachableCode.java:11   if (result instanceof RuntimeException) {</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
+    <violation beginline="23" endline="23" begincolumn="19" endcolumn="39" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "!volumetric" always evaluates to true
+        - Start of the path
+           UnreachableCode.java:19   guessFigure(boolean round, boolean volumetric)
+        - UnreachableCode.java:20   final int figure;
+        - UnreachableCode.java:21   if (round &amp;&amp; volumetric) {  *** Condition evaluation: round (assuming true)  *** Condition evaluation: volumetric (assuming false)  *** Condition evaluation: round &amp;&amp; volumetric (false)
+        - Point where senseless condition is used
+           UnreachableCode.java:23   round &amp;&amp; !volumetric  *** Condition evaluation: round (true)</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UnreachableCode.java">
+    <violation beginline="25" endline="25" begincolumn="19" endcolumn="25" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.flowanalysis">Condition "!round" always evaluates to true
+        - Start of the path
+           UnreachableCode.java:19   guessFigure(boolean round, boolean volumetric)
+        - UnreachableCode.java:20   final int figure;
+        - UnreachableCode.java:21   if (round &amp;&amp; volumetric) {  *** Condition evaluation: round (assuming false)  *** Condition evaluation: round &amp;&amp; volumetric (false)
+        - UnreachableCode.java:23   if (round &amp;&amp; !volumetric) {  *** Condition evaluation: round (false)  *** Condition evaluation: round &amp;&amp; !volumetric (false)
+        - Point where senseless condition is used
+           UnreachableCode.java:25   !round</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
+    <violation beginline="40" endline="40" begincolumn="12" endcolumn="60" priority="1" rule="BD.PB.NOTINITCTOR" ruleset="Possible Bugs" package="examples.flowanalysis">"this.minLoginLength" is used prior to explicit initialization
+        - UseBeforeInConstructorInitialization.java:28   int minLoginLength = 7;  *** Not explicitly initialized value: this.minLoginLength  *** Point of implicit initialization
+        - UseBeforeInConstructorInitialization.java:31   super(name, password);
+           - UseBeforeInConstructorInitialization.java:16   this.name = name;  *** Not explicitly initialized value: this.minLoginLength
+           - UseBeforeInConstructorInitialization.java:17   this.password = password;
+           - UseBeforeInConstructorInitialization.java:18   checkData();
+              - Usage point
+                 UseBeforeInConstructorInitialization.java:40   if (super.name.length() &lt; this.minLoginLength) {  *** Not explicitly initialized value: this.minLoginLength  *** Condition evaluation: (super.name.length() &lt; this.minLoginLength) (false)
+        - Point of explicit initialization
+           UseBeforeInConstructorInitialization.java:28   int minLoginLength = 7;</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInConstructorInitialization.java">
+    <violation beginline="40" endline="40" begincolumn="16" endcolumn="57" priority="1" rule="BD.PB.NOTEXPLINIT" ruleset="Possible Bugs" package="examples.flowanalysis">"this.minLoginLength" is used prior to explicit initialization
+        - Source of implicitly initialized value
+           UseBeforeInConstructorInitialization.java:28   int minLoginLength = 7;  *** Not explicitly initialized value: this.minLoginLength
+        - UseBeforeInConstructorInitialization.java:31   super(name, password);
+           - UseBeforeInConstructorInitialization.java:16   this.name = name;  *** Not explicitly initialized value: this.minLoginLength
+           - UseBeforeInConstructorInitialization.java:17   this.password = password;
+           - UseBeforeInConstructorInitialization.java:18   checkData();
+              - Usage point
+                 UseBeforeInConstructorInitialization.java:40   super.name.length() &lt; this.minLoginLength  *** Not explicitly initialized value: this.minLoginLength</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/UseBeforeInitialization.java">
+    <violation beginline="22" endline="22" begincolumn="21" endcolumn="70" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.flowanalysis">Stream not closed: new FileInputStream("...")
+        - UseBeforeInitialization.java:20   ObjectInputStream source = null;
+        - Point where the resource is allocated
+           Point where the allocated resource is lost
+           UseBeforeInitialization.java:22   new ObjectInputStream(new FileInputStream("..."))  *** ObjectInputStream.ObjectInputStream() throws IOException  *** Allocated resource variable: new FileInputStream("...")</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/MyDictionary.java">
+    <violation beginline="18" endline="18" begincolumn="8" endcolumn="32" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis.np">"strKey" may possibly be null
+        - Source of null value
+           MyDictionary.java:14   String strKey = null;  *** Null value carrier: strKey
+        - MyDictionary.java:15   if (key instanceof String) {  *** Condition evaluation: key instanceof java.lang.String (assuming false)
+        - NullPointerException point
+           MyDictionary.java:18   dict.put(strKey, value);  *** Null value carrier: strKey</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
+    <violation beginline="22" endline="22" begincolumn="15" endcolumn="34" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis.np">"sFirstLine" may possibly be null
+        - Source of null value
+           NullPointer.java:12   String sFirstLine = null;  *** Null value carrier: sFirstLine
+        - NullPointer.java:13   BufferedReader reader = null;
+        - NullPointer.java:15   new FileReader(sFileName)  *** FileReader.FileReader() throws FileNotFoundException
+        - NullPointer.java:17   catch (Exception e)
+        - NullPointer.java:18   System.out.println("Exception occured. " + e.toString());
+        - NullPointer.java:20   close(reader);
+           - NullPointer.java:27   reader.close();
+        - NullPointerException point
+           NullPointer.java:22   sFirstLine.length()  *** Null value carrier: sFirstLine</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/flowanalysis/np/NullPointer.java">
+    <violation beginline="27" endline="27" begincolumn="12" endcolumn="27" priority="1" rule="BD.EXCEPT.NP" ruleset="Exceptions" package="examples.flowanalysis.np">"reader" may possibly be null
+        - NullPointer.java:12   String sFirstLine = null;
+        - Source of null value
+           NullPointer.java:13   BufferedReader reader = null;  *** Null value carrier: reader
+        - NullPointer.java:15   new FileReader(sFileName)  *** FileReader.FileReader() throws FileNotFoundException
+        - NullPointer.java:17   catch (Exception e)
+        - NullPointer.java:18   System.out.println("Exception occured. " + e.toString());
+        - NullPointer.java:20   close(reader);
+           - NullPointerException point
+              NullPointer.java:27   reader.close();  *** Null value carrier: reader</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/mock/ConstructorExample.java">
+    <violation beginline="14" endline="14" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.mock">File not closed: file
+        - Point where the resource is allocated
+           ConstructorExample.java:12   RandomAccessFile file = new RandomAccessFile(path, "rw");  *** Allocated resource variable: new RandomAccessFile(path, "rw")
+        - ConstructorExample.java:13   file.length()  *** RandomAccessFile.length() throws IOException  *** Allocated resource variable: file
+        - Point where the allocated resource is lost
+           ConstructorExample.java:14   }  *** Allocated resource variable: file</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
+    <violation beginline="36" endline="36" begincolumn="19" endcolumn="48" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.nbank">Condition "balance &gt;= 5000" always evaluates to true
+        - Start of the path
+           Account.java:33   setAccountStatus(int balance)
+        - Account.java:34   if (balance &lt; BALANCE_GOLD_MIN) {  *** Condition evaluation: (balance &lt; 5000) (assuming false)
+        - Point where senseless condition is used
+           Account.java:36   (balance &gt;= BALANCE_GOLD_MIN)</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Account.java">
+    <violation beginline="73" endline="73" begincolumn="19" endcolumn="48" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.nbank">Condition "balance &gt;= 5000" always evaluates to true
+        - Start of the path
+           Account.java:69   setBalance(int balance)
+        - Account.java:70   _balance = balance;
+        - Account.java:71   if (balance &lt; BALANCE_GOLD_MIN) {  *** Condition evaluation: (balance &lt; 5000) (assuming false)
+        - Point where senseless condition is used
+           Account.java:73   (balance &gt;= BALANCE_GOLD_MIN)</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.nbank">JDBC statement not closed: statement
+        - Customer.java:70   Connection connection = null;
+        - Customer.java:71   PreparedStatement statement = null;
+        - Customer.java:72   ResultSet resultSet = null;
+        - Customer.java:74   Class.forName("org.gjt.mm.mysql.Driver");
+        - Customer.java:75   connection = DriverManager.getConnection("bank", "bank", "system")
+        - Point where the resource is allocated
+           Customer.java:84   statement = connection.prepareStatement("select * from accounts where id=" + _ssn)  *** Allocated resource variable: statement
+        - Customer.java:85   resultSet = statement.executeQuery()  *** PreparedStatement.executeQuery() throws SQLException
+        - Customer.java:90   catch (SQLException exception)
+        - Customer.java:91   System.err.println("Error loading data from database: " + exception.getMessage());
+        - Customer.java:92   return false;
+        - Point where the allocated resource is lost
+           Customer.java:95   }  *** Allocated resource variable: statement</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.nbank">JDBC resultset not closed: statement.resultSet(), resultSet
+        - Customer.java:70   Connection connection = null;
+        - Customer.java:71   PreparedStatement statement = null;
+        - Customer.java:72   ResultSet resultSet = null;
+        - Customer.java:74   Class.forName("org.gjt.mm.mysql.Driver");
+        - Customer.java:75   connection = DriverManager.getConnection("bank", "bank", "system")
+        - Customer.java:84   statement = connection.prepareStatement("select * from accounts where id=" + _ssn)
+        - Point where the resource is allocated
+           Customer.java:85   resultSet = statement.executeQuery()  *** Allocated resource variable: statement.resultSet(), resultSet
+        - Customer.java:86   _name = resultSet.getString(0)  *** ResultSet.getString() throws SQLException
+        - Customer.java:90   catch (SQLException exception)
+        - Customer.java:91   System.err.println("Error loading data from database: " + exception.getMessage());
+        - Customer.java:92   return false;
+        - Point where the allocated resource is lost
+           Customer.java:95   }  *** Allocated resource variable: statement.resultSet(), resultSet</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/nbank/Customer.java">
+    <violation beginline="95" endline="95" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.nbank">JDBC Connection not closed: connection
+        - Customer.java:70   Connection connection = null;
+        - Customer.java:71   PreparedStatement statement = null;
+        - Customer.java:72   ResultSet resultSet = null;
+        - Customer.java:74   Class.forName("org.gjt.mm.mysql.Driver");
+        - Point where the resource is allocated
+           Customer.java:75   connection = DriverManager.getConnection("bank", "bank", "system")  *** Allocated resource variable: connection
+        - Customer.java:84   statement = connection.prepareStatement("select * from accounts where id=" + _ssn)  *** Connection.prepareStatement() throws SQLException
+        - Customer.java:90   catch (SQLException exception)
+        - Customer.java:91   System.err.println("Error loading data from database: " + exception.getMessage());
+        - Customer.java:92   return false;
+        - Point where the allocated resource is lost
+           Customer.java:95   }  *** Allocated resource variable: connection</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
+    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.security">JDBC resultset not closed: stmt.resultSet(), rs
+        - InputValidation.java:83   Statement stmt = null;
+        - InputValidation.java:84   ResultSet rs = null;
+        - InputValidation.java:89   String query = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
+        - InputValidation.java:90   stmt = _connection.createStatement()
+        - Point where the resource is allocated
+           InputValidation.java:91   rs = stmt.executeQuery(query)  *** Allocated resource variable: stmt.resultSet(), rs
+        - InputValidation.java:92   if (rs.next()) {  *** Condition evaluation: rs.next() (assuming false)
+        - InputValidation.java:97   return false;
+        - Point where the allocated resource is lost
+           InputValidation.java:102   }  *** Allocated resource variable: stmt.resultSet(), rs</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
+    <violation beginline="102" endline="102" begincolumn="4" endcolumn="5" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.security">JDBC statement not closed: stmt
+        - InputValidation.java:83   Statement stmt = null;
+        - InputValidation.java:84   ResultSet rs = null;
+        - InputValidation.java:89   String query = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
+        - Point where the resource is allocated
+           InputValidation.java:90   stmt = _connection.createStatement()  *** Allocated resource variable: stmt
+        - InputValidation.java:91   rs = stmt.executeQuery(query)  *** Statement.executeQuery() throws SQLException
+        - InputValidation.java:98   catch (Throwable t)
+        - InputValidation.java:100   return false;
+        - Point where the allocated resource is lost
+           InputValidation.java:102   }  *** Allocated resource variable: stmt</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/security/InputValidation.java">
+    <violation beginline="123" endline="123" begincolumn="8" endcolumn="9" priority="1" rule="BD.RES.LEAKS" ruleset="Resources" package="examples.security">JDBC statement not closed: stmt
+        - Point where the resource is allocated
+           InputValidation.java:120   Statement stmt = _connection.createStatement();  *** Allocated resource variable: stmt
+        - InputValidation.java:121   String query = "INSERT INTO invalid_logins VALUES ('" + username + "', '" + password + "')";
+        - InputValidation.java:122   stmt.execute(query);  *** Statement.execute() throws SQLException
+        - Point where the allocated resource is lost
+           InputValidation.java:123   }  *** Allocated resource variable: stmt</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/servlets/ExampleServlet.java">
+    <violation beginline="33" endline="33" begincolumn="15" endcolumn="27" priority="2" rule="BD.PB.CC" ruleset="Possible Bugs" package="examples.servlets">Condition "n &gt; 0" always evaluates to true
+        - Start of the path
+           ExampleServlet.java:26   tryThis(ServletContext sc)
+        - ExampleServlet.java:27   String hello = "hello";
+        - ExampleServlet.java:28   String result = sc.getInitParameter("hello");
+        - ExampleServlet.java:29   System.out.println(result);
+        - ExampleServlet.java:30   int n = result.length();
+        - ExampleServlet.java:31   if (n == 0) {  *** Condition evaluation: (n == 0) (assuming false)
+        - Point where senseless condition is used
+           ExampleServlet.java:33   if (n &gt; 0) {</violation>
+  </file>
+  <file name="/com.parasoft:demo/src/main/java/examples/metrics/MetricsExample.java">
+    <violation beginline="13" endline="14" begincolumn="0" endcolumn="0" priority="3" rule="METRIC.NBD" ruleset="Metric">Value 8 is out of acceptable range: 'lower than 7'</violation>
+  </file>
+</pmd>
