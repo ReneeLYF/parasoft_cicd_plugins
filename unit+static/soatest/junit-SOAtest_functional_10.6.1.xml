@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites>
+    <testsuite name="VirtualAssets.generateResults_tst" tests="18" id="1" package="" time="0.768" hostname="CONQUEROR" timestamp="2022-10-18T12:09:44" failures="18" errors="0">
+        <properties/>
+        <testcase name="Test Suite: Test Suite/Test 1: passingTest" classname="VirtualAssets.generateResults_tst" time="0.620">
+            <failure message="Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test 2: failingTestWithSingleViolation" classname="VirtualAssets.generateResults_tst" time="0.014">
+            <failure message="Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test 3: failingTestWithmultipleViolations" classname="VirtualAssets.generateResults_tst" time="0.008">
+            <failure message="Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedPassingTest/Test 1: passingTest[Status (row 1)]" classname="VirtualAssets.generateResults_tst" time="0.010">
+            <failure message="DataSource: Status (row 1): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedPassingTest/Test 1: passingTest[Status (row 2)]" classname="VirtualAssets.generateResults_tst" time="0.009">
+            <failure message="DataSource: Status (row 2): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedPassingTest/Test 1: passingTest[Status (row 3)]" classname="VirtualAssets.generateResults_tst" time="0.009">
+            <failure message="DataSource: Status (row 3): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedPassingTest/Test 1: passingTest[Status (row 4)]" classname="VirtualAssets.generateResults_tst" time="0.008">
+            <failure message="DataSource: Status (row 4): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedPassingTest/Test 1: passingTest[Status (row 5)]" classname="VirtualAssets.generateResults_tst" time="0.007">
+            <failure message="DataSource: Status (row 5): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithSingleViolation/Test 1: failingTestWithSingleViolation[Status (row 1)]" classname="VirtualAssets.generateResults_tst" time="0.010">
+            <failure message="DataSource: Status (row 1): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithSingleViolation/Test 1: failingTestWithSingleViolation[Status (row 2)]" classname="VirtualAssets.generateResults_tst" time="0.008">
+            <failure message="DataSource: Status (row 2): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithSingleViolation/Test 1: failingTestWithSingleViolation[Status (row 3)]" classname="VirtualAssets.generateResults_tst" time="0.007">
+            <failure message="DataSource: Status (row 3): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithSingleViolation/Test 1: failingTestWithSingleViolation[Status (row 4)]" classname="VirtualAssets.generateResults_tst" time="0.008">
+            <failure message="DataSource: Status (row 4): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithSingleViolation/Test 1: failingTestWithSingleViolation[Status (row 5)]" classname="VirtualAssets.generateResults_tst" time="0.008">
+            <failure message="DataSource: Status (row 5): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithMultipleViolations/Test 1: failingTestWithMultipleViolations[Status (row 1)]" classname="VirtualAssets.generateResults_tst" time="0.010">
+            <failure message="DataSource: Status (row 1): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithMultipleViolations/Test 1: failingTestWithMultipleViolations[Status (row 2)]" classname="VirtualAssets.generateResults_tst" time="0.008">
+            <failure message="DataSource: Status (row 2): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithMultipleViolations/Test 1: failingTestWithMultipleViolations[Status (row 3)]" classname="VirtualAssets.generateResults_tst" time="0.009">
+            <failure message="DataSource: Status (row 3): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithMultipleViolations/Test 1: failingTestWithMultipleViolations[Status (row 4)]" classname="VirtualAssets.generateResults_tst" time="0.008">
+            <failure message="DataSource: Status (row 4): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <testcase name="Test Suite: Test Suite/Test Suite: parametrizedFailingTestWithMultipleViolations/Test 1: failingTestWithMultipleViolations[Status (row 5)]" classname="VirtualAssets.generateResults_tst" time="0.007">
+            <failure message="DataSource: Status (row 5): Connection refused: connect" type="Failure">A connection error has been detected.  This may occur if a test has timed out while the client was still attempting to send or receive data.</failure>
+        </testcase>
+        <system-out/>
+        <system-err/>
+    </testsuite>
+</testsuites>

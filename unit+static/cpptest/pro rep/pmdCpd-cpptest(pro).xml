@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><pmd-cpd>
+    <duplication lines="3" tokens="-1">
+        <file column="0" endcolumn="1" endline="76" line="73" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="0" endcolumn="1" endline="82" line="79" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+    </duplication>
+    <duplication lines="0" tokens="-1">
+        <file column="1" endcolumn="30" endline="75" line="75" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="1" endcolumn="30" endline="81" line="81" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+    </duplication>
+    <duplication lines="0" tokens="-1">
+        <file column="3" endcolumn="17" endline="91" line="91" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="3" endcolumn="17" endline="122" line="122" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="1" endcolumn="16" endline="9" line="9" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/MemoryLeak.cpp"/>
+    </duplication>
+    <duplication lines="0" tokens="-1">
+        <file column="4" endcolumn="38" endline="92" line="92" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="3" endcolumn="37" endline="118" line="118" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+    </duplication>
+    <duplication lines="0" tokens="-1">
+        <file column="3" endcolumn="15" endline="100" line="100" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="3" endcolumn="15" endline="128" line="128" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+    </duplication>
+    <duplication lines="0" tokens="-1">
+        <file column="2" endcolumn="11" endline="102" line="102" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="2" endcolumn="11" endline="130" line="130" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="1" endcolumn="10" endline="13" line="13" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/NullPointer.cpp"/>
+        <file column="29" endcolumn="38" endline="19" line="19" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/Shapes.hpp"/>
+    </duplication>
+    <duplication lines="7" tokens="-1">
+        <file column="0" endcolumn="1" endline="142" line="135" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="0" endcolumn="1" endline="152" line="145" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+    </duplication>
+    <duplication lines="5" tokens="-1">
+        <file column="1" endcolumn="47" endline="141" line="136" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+        <file column="1" endcolumn="47" endline="151" line="146" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/DeadLock.cpp"/>
+    </duplication>
+    <duplication lines="0" tokens="-1">
+        <file column="14" endcolumn="18" endline="7" line="7" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/MemoryLeak.cpp"/>
+        <file column="19" endcolumn="23" endline="10" line="10" path="/cicd.findings.cpptest.professional.static.analysis.report/cicd.findings.cpptest.professional.static.analysis.report/MemoryLeak.cpp"/>
+    </duplication>
+</pmd-cpd>
